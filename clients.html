@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="en-gb">
+    
+    <head>
+        <title>Letterlust Studio</title>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no"/>
+		
+		<!-- fonts -->
+		<link href="https://fonts.googleapis.com/css?family=Libre+Baskerville:400,400i,700" rel="stylesheet">
+		
+		<!-- css -->
+        <link rel="stylesheet" type="text/css" href="css/reset.css">
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		
+		<!-- js -->
+		<script src="js/classie.js"></script>
+		<script>
+			function init() {
+				window.addEventListener('scroll', function(e){
+					var distanceY = window.pageYOffset || document.documentElement.scrollTop,
+						shrinkOn = 0,
+						header = document.querySelector("header");
+					if (distanceY > shrinkOn) {
+						classie.add(header,"smaller");
+					} else {
+						if (classie.has(header,"smaller")) {
+							classie.remove(header,"smaller");
+						}
+					}
+				});
+			}
+			window.onload = init();
+		</script>
+		
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+		<script src="js/responsiveslides.min.js"></script>
+		
+		<link rel="icon" 
+			  type="image/png" 
+			  href="img/MainElements/favicon.png">
+		
+		
+		
+    </head>
+	
+	
+	<body>
+		
+		<div class="ColouredContainer">
+			
+			<div class="ControlledWidth">
+
+
+				<header>
+
+					<a href="index.html"><img class="HeaderLogo" src="img/svg/letterlust_logo.svg"/></a>
+
+					<nav id="mainNav">
+						<ul>
+							<a href="index.html"><li>Home</li></a>
+							<a href="work.html"><li>Work</li></a>
+							<a href="clients.html" class="currentPage"><li>Clients</li></a>
+							<a href="about.html"><li>About</li></a>
+							<a href="#footer"><li>Contact</li></a>
+						</ul>
+					</nav>
+
+				</header>
+				
+				
+				<div  class="clients">
+					
+					
+					<div class="heading">
+						<hr/>
+						<h1 class="ColouredContainer">LOGOS DESIGNED BY LETTERLUST</h1>
+					</div>
+					
+					<div>
+					
+						<a href="https://www.fleetstreetclinic.com/" target="_blank"><img class="client" src="img/Clients/29fleetstreet.svg"></a>
+						<a href="https://www.facebook.com/theleague.clubcommunity/" target="_blank"><img class="client" src="img/Clients/theleague.svg"></a>
+						<img class="client clientmargintop" src="img/Clients/badbrownies.svg">
+						<a href="https://www.facebook.com/saraonsiofficial/" target="_blank"><img class="client clientmargintop" src="img/Clients/saraonsi.svg"></a>
+					
+					</div>	
+					
+					<div class="heading">
+						<hr/>
+						<h1 class="ColouredContainer">PLEASURE TO HAVE WORKED WITH</h1>
+					</div>
+					
+					<div class="workedwith">
+					
+						
+						<a href="https://www.museumoflondon.org.uk/" target="_blank"><img class="client" src="img/Clients/museumoflondon.svg"></a>
+						<a href="http://tedxguc.org/" target="_blank"><img class="client" src="img/Clients/tedxguc.svg"></a>
+						
+						<a href="https://www.facebook.com/riseupsummit/" target="_blank"><img class="client" src="img/Clients/riseup.png"></a>
+						<a href="https://www.facebook.com/elre7la/" target="_blank"><img class="client" src="img/Clients/elre7la.png"></a>
+
+						<a href="https://www.behance.net/gallery/5790415/Sustainability-Career-Fair-Website" target="_blank"><img class="client" src="img/Clients/scf.png"></a>
+						
+						<a href="https://dotsplanner.com/" target="_blank"><img class="client" src="img/Clients/dots.svg"></a>
+						
+						<a href="https://www.facebook.com/GenainaTheater/" target="_blank"><img class="client" src="img/Clients/elgenaina.png"></a>
+						<a href="https://www.facebook.com/bdivercommunity/" target="_blank"><img class="client" src="img/Clients/bdiver.png"></a>
+						
+						<a href="https://www.facebook.com/zawyacinema/" target="_blank"><img class="client" src="img/Clients/zawya.png"></a>
+						<a href="https://www.facebook.com/1001streetchairscairo/" target="_blank"><img class="client" src="img/Clients/1001streetchairsofcairo.png"></a>
+						<a href="http://16dash.co/" target="_blank"><img class="client" src="img/Clients/16dash.png"></a>
+<!--						<a href="https://shezlong.com/" target="_blank"><img class="client" src="img/Clients/shezlong.svg"></a>-->
+						
+						<a href="http://www.styleandrhythm.co.uk/" target="_blank"><img class="client" src="img/Clients/style&rhythm.png"></a>
+						
+					</div>
+					
+
+				</div>
+
+				
+				
+			</div>
+		
+		
+		</div>
+		
+		<footer id="footer">
+			
+			<div class="ControlledWidth">
+			
+				<a href="mailto:sayhello@letterlust.studio">sayhello@letterlust.studio</a>
+				
+				<div class="SocialMedia">
+					
+					<a href="https://www.facebook.com/letter.lust" target="_blank"><div class="SocialMediaCircle">
+						
+						<img class="FacebookFooterIcon" src="img/svg/facebook-logo.svg">
+					
+					</div></a>
+					
+					<a href="https://www.instagram.com/letter.lust/" target="_blank"><div class="SocialMediaCircle">
+						
+						<img class="InstagramFooterIcon" src="img/svg/instagram-logo.svg">
+					
+					</div></a>
+					
+				</div>
+			
+			</div>
+		
+		</footer>
+		
+		
+		<script>
+				$(function() {
+					$(".rslides").responsiveSlides();
+				});
+		</script>
+		
+	</body>
+	
+	
+	
+</html>

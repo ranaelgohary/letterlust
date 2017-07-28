@@ -33,6 +33,9 @@
 			window.onload = init();
 		</script>
 		
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+		<script src="js/responsiveslides.min.js"></script>
+		
 		<link rel="icon" 
 			  type="image/png" 
 			  href="img/MainElements/favicon.png">
@@ -53,24 +56,62 @@
 
 					<a href="index.html"><img class="HeaderLogo" src="img/svg/letterlust_logo.svg"/></a>
 
-					<nav>
+					<nav id="mainNav">
 						<ul>
-							<a href="graphicdesign.html"><li>Graphic Design</li></a>
-							<a href="letteringart.html"><li>Lettering Art</li></a>
-							<a href="about.html" id="currentPage"><li>About</li></a>
-							<a href="contact.html"><li>Contact</li></a>
+							<a href="index.html"><li>Home</li></a>
+							<a href="work.html"><li>Work</li></a>
+							<a href="clients.html"><li>Clients</li></a>
+							<a href="about.html" class="currentPage"><li>Story</li></a>
+							<a href="#footer"><li>Contact</li></a>
 						</ul>
 					</nav>
 
 				</header>
 				
+				<div class="ControlledWidth">
 				
+					
+					
+<!--
+					<div class="about">
+						
+						<img class="rana" src="img/About/IMG_1335.JPG">
+						
+						<div class="text">
+							<h1>Rana Elgohary</h1>
+							<h2>Graphic & Web Designer</h2>
+							<p>I graduated in 2014 from the German University in Cairo majoring in Media Design, intering at <a>Novamondo</a> in Berlin and then went to work for two years at the <a>Digital Innovation Group</a> in London.<br><br>I am now working full-time at Letterlust designing Logos, Websites and Layouts for Digital & Print. For inquiries, write me using the contact form below.</p>
+						</div>
+
+						
+
+					</div>
+-->
+					
+					
+					<div class="about">
+						
+						<img class="rana" src="img/About/image4.jpg">
+						
+						<div class="text">
+							<p><img src="img/About/L.png">etterlust was founded in 2017. A Graphic Design, Web Design & Lettering Art Studio run by #yourstruly Rana Elgohary. I graduated in 2014 from the German University in Cairo majoring in Media Design, did my internship at <a href="http://novamondo.de/" target="_blank">Novamondo</a> in Berlin and then went to work for 2 years at the <a href="http://digitalinnovationgroup.com/" target="_blank">Digital Innovation Group</a> in London.<br><br>I'm now working full-time at Letterlust designing Logos, Websites and Layouts for Digital & Print.<br>For design inquiries, please message <a href="https://www.facebook.com/letter.lust" target="_blank">The Facebook Page</a><br>or e-mail <a href="mailto:sayhello@letterlust.studio">sayhello@letterlust.studio</a></p>
+						</div>
+
+						
+
+					</div>
+					
+				</div>
 
 				<div class="HomeAbout">
 
-					<h1><a href="about.html">One-woman</a> <a href="graphicdesign.html">Graphic Design</a>
-					<br>& <a href="letteringart.html">Lettering Art</a> studio based between 
-					<br>Cairo and London.</h1> 
+					<div class="HomeAbout">
+
+						<h1>Graphic Design, Web Design 
+						<br>& Lettering Art Studio based between 
+						<br>Cairo and London</h1>
+
+					</div>
 
 				</div>
 				
@@ -78,11 +119,11 @@
 		
 		</div>
 		
-		<footer>
+		<footer id="footer">
 			
 			<div class="ControlledWidth">
 			
-				<a href="mailto:contact@ranaelgohary.com">sayhello@letterlust.studio</a>
+				<a href="mailto:sayhello@letterlust.studio">sayhello@letterlust.studio</a>
 				
 				<div class="SocialMedia">
 					
@@ -103,6 +144,12 @@
 			</div>
 		
 		</footer>
+		
+		<script>
+				$(function() {
+					$(".rslides").responsiveSlides();
+				});
+		</script>
 		
 	</body>
 	

@@ -13,6 +13,10 @@
 		cursor: pointer;
 	}
 
+	.center {
+		text-align: center;
+	}
+
 	.ColouredContainer {
 		animation: colorchange 30s infinite; /* animation-name followed by duration in seconds*/
          /* you could also use milliseconds (ms) or something like 2.5s */
@@ -75,7 +79,7 @@ header.smaller .HeaderLogo {
 }
 
 nav {
-	border-top: solid #000 1px;
+	border-bottom: solid #000 1px;
 	overflow: hidden;
 }
 
@@ -85,17 +89,23 @@ nav ul {
 
 	nav ul a {
 		float: left;
-		padding-bottom: 1px;
+		
+		-webkit-transition: all 0.3s;
+		-moz-transition: all 0.3s;
+		-ms-transition: all 0.3s;
+		-o-transition: all 0.3s;
+		transition: all 0.3s;
 	}
 
 	nav ul a:hover {
-		border-bottom: solid #000 1px;
+		letter-spacing: 2px;
 		cursor: crosshair;
 		padding-top: 0px;
 	}
 
-	nav ul #currentPage {
+	nav ul .currentPage {
 		border-bottom: solid #000 1px;
+		border-top: solid #000 1px;
 		padding-top: 0px;
 	}
 
@@ -106,7 +116,6 @@ nav ul {
 
 		nav li {
 			font-style: italic;
-			width: 250px;
 			text-align: center;
 			padding: 20px 0;
 		}
@@ -115,6 +124,18 @@ nav ul {
 			cursor: crosshair;
 		}
 
+
+#mainNav {
+	border-top: solid #000 1px;
+}
+
+#mainNav li {
+	width: 200px;
+}
+
+#workNav li {
+	width: 142.8px;
+}
 
 
 /*HomepageSlider*/
@@ -161,14 +182,14 @@ nav ul {
 
 
 .HomeAbout {
-	padding: 100px 0;
+	padding: 70px 0;
 	
 }
 
 	.HomeAbout h1 {
 		font-style: italic;
-		font-size: 58px;
-		line-height: 86px;
+		font-size: 50px;
+		line-height: 70px;
 		text-align: center;
 	}
 
@@ -200,13 +221,34 @@ nav ul {
 		filter: blur(3px);
 	}
 
+/*Homepage Intro*/
+
+.HomeIntro {
+	padding: 60px 0 0px 0;
+}
+
+	.HomeIntro h1 {
+		font-size: 48px;
+		line-height: 67px;
+		text-align: center;
+		text-transform: uppercase;
+	}
+
+	.HomeIntro h2 {
+		font-style: italic;
+		font-size: 28px;
+		line-height: 40px;
+		margin-top: 24px;
+		text-align: center;
+		margin-top: 30px;
+	}
 
 
 /*Featured Projects*/
 
 .FeaturedProjects {
 	overflow: hidden;
-	margin-top: 50px;
+	margin-top: 20px;
 }
 
 .FeaturedProjects .Left,
@@ -250,11 +292,9 @@ nav ul {
     transition: all 0.3s;
 }
 
-/*
 .MainViewProject:hover {
 	opacity: 0.8;
 }
-*/
 
 
 
@@ -320,6 +360,264 @@ footer {
 
 
 
+/*Detailed Project*/
+
+.DetailedProject {
+	margin-top: 20px;
+	width: 100%
+}
+
+	.DetailedProject img {
+		width: 100%;
+	}
+
+	.DetailedProjectLimitedWidth {
+		margin: 0 auto;
+		width: 700px;
+	}
+
+	.DetailedProjectHeading {
+		margin-top: 70px;
+	}
+
+	.DetailedProject h1 {
+		font-size: 40px;
+		text-align: center;
+	}
+
+		.DetailedProject h1 img {
+			margin-top: 12px;
+			width: 120px;
+		}
+
+	.DetailedProject h2 {
+		color: #526C91;
+		text-transform: uppercase;
+		font-size: 14px;
+		line-height: 40px;
+		margin-top: 100px;
+		text-align: center;
+		margin-top: 4px;
+	}
+
+	.DetailedProject p {
+		
+		padding-top: 20px;
+		font-size: 18px;
+		line-height: 31px;
+		
+	}
+
+	.DetailedProject p a {
+		
+		font-weight: 700;
+		
+	}
+
+	.DetailedProject p a:hover {
+		
+		letter-spacing: 1px;
+		
+	}
+
+	.DetailedProjectImg {
+		margin-top: 39px;
+		margin-bottom: 20px;
+	}
+
+	.DetailedProjectImgMiddle {
+		margin-top: 0px;
+		margin-bottom: 20px;
+	}
+
+	.DetailedProject figcaption {
+		color: #555555;
+		font-style: italic;
+		text-align: center;
+		margin-top: 30px;
+		margin-bottom: 20px;
+		line-height: 24px;
+		font-size: 16px;
+	}
+	
+		.DetailedProject figcaption span {
+			font-style: normal;
+			font-weight: 700;
+			line-height: 32px;
+			font-size: 18px;
+		}
+
+	.DetailedProject #ClosingFlourish {
+		width: 160px;
+		margin: 30px auto 0 auto;
+		display: block;
+	}
+
+
+/*About*/
+
+.about img {
+	width: 100%;
+}
+
+/*Clients*/
+
+.clients {
+	overflow: hidden;
+	border: solid rgba(255, 0, 0, 0);
+}
+
+	.clients .heading {
+		margin-top: 60px;
+		margin-bottom: 52px;
+		overflow: hidden;
+		
+		border: solid rgba(255, 0, 0, 0);
+	}
+	
+	.clients .heading hr {
+		margin-top: 10px;
+		border-top: 1px solid #000;
+	}
+
+	.clients h1 {
+		width: 400px;
+		
+		margin-top: -8px;
+		text-transform: uppercase;
+		text-align: center;
+		font-size: 18px;
+		letter-spacing: 0.01em;
+		font-weight: 400;
+		
+		
+		
+		margin: -18px auto 0 auto;
+		display: block;
+	}
+
+	.client {
+		width: 50%;
+		float: left;
+		margin-top: -40px;
+	}
+
+		.client:hover {
+			opacity: 0.5;
+		}
+
+
+	.clientmargintop {
+		margin-top: -60px;
+	}
+
+
+	.clients .workedwith {
+		margin-bottom: 60px;
+		overflow: hidden;
+	}
+
+
+	.clients .workedwith .client {
+		width: 25%;
+		margin-top: 0;
+	}
 
 
 
+
+
+/*About*/
+
+.about {
+	overflow: hidden;
+	border: solid 1px;
+	margin-top: 60px;
+}
+
+.about .rana {
+	width: 498px;
+	float: left;
+	border-right: solid 1px;
+}
+
+.about .text {
+	width: 40%;
+	padding: 0 5%;
+	float: left;
+	padding-top: 82px;
+	background: rgba(255,255,255,0.4);
+	height: 415px;
+	text-align: justify;
+}
+
+.about .text img {
+	width: 100px;
+}
+
+.about h1 {
+/*	text-transform: uppercase;*/
+	font-size: 28px;
+	letter-spacing: 0.01em;
+	font-weight: 700;
+	margin-bottom: 12px;
+}
+
+.about h2 {
+	font-size: 16px;
+	letter-spacing: 0.03em;
+	font-style: italic;
+	margin-bottom: 24px;
+}
+
+.about p {
+	line-height: 28px;
+	font-size: 14px;
+}
+
+.about p img {
+	float: left;
+	margin-right: 8px;
+	width: 120px;
+	margin-left: -10px;
+	margin-top: -4px;
+}
+
+/*
+.about p::first-letter { 
+    font-size: 630%;
+	color: black;
+	margin: 34px 0px -5px 0;
+	padding: 0 10px 20px 0;
+	height: .6em;
+	float: left;
+	vertical-align: text-top;
+	font-style: italic;
+}
+*/
+
+.about p a {
+		color: #000;
+		border-bottom: solid rgba(0,0,0,0.1) 1px;
+		text-decoration: none;
+		font-style: italic;
+		padding: 7px 0;
+		
+		-webkit-transition: all 0.2s;
+		-moz-transition: all 0.2s;
+		-ms-transition: all 0.2s;
+		-o-transition: all 0.2s;
+		transition: all 0.2s;
+	}
+
+		.about p a:hover {
+
+		cursor: crosshair;
+		border-bottom: solid rgba(0,0,0,1) 1px;
+			
+		-webkit-filter: blur(1px);
+		-moz-filter: blur(1);
+		-o-filter: blur(1px);
+		-ms-filter: blur(1px);
+		filter: blur(1px);
+	}
