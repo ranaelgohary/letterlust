@@ -894,9 +894,17 @@ footer {
 		float: left;
 	}
 	
+	.DetailedProject {
+		margin-top: 0px;
+	}
+	
 	
 	.DetailedProjectLimitedWidth {
 		width: 300px;
+	}
+	
+	.DetailedProjectHeading {
+		margin-top: 44px;
 	}
 	
 	.DetailedProject h1 {
@@ -906,8 +914,8 @@ footer {
 	}
 	
 	.DetailedProject p {
-		font-size: 14px;
-		line-height: 23px;
+		font-size: 12px;
+		line-height: 20px;
 	}
 	
 	.clients .heading {
@@ -947,6 +955,10 @@ footer {
 	.about p {
 		font-size: 12px;
 		line-height: 21px;
+	}
+	
+	.about p a {
+		padding: 3px 0;
 	}
 	
 }
