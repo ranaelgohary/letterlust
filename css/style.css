@@ -42,15 +42,19 @@
     }
 
 
-
-
-
 .ControlledWidth {
 	display: block;
 	margin: 0 auto;
 	width: 1000px;
 }
 
+.displayNone {
+	display: none;
+}
+
+.displayBlock {
+	display: block;
+}
 
 
 /*Header*/
@@ -127,6 +131,8 @@ nav ul {
 
 #mainNav {
 	border-top: solid #000 1px;
+	
+	display: none;
 }
 
 #mainNav li {
@@ -136,6 +142,58 @@ nav ul {
 #workNav li {
 	width: 142.8px;
 }
+
+
+/*Burger Menu*/
+
+.mobileMenuToggle:hover {
+		cursor: pointer;
+}
+
+#openBurgerMenu, #closeBurgerMenu {
+	border-top: solid #000 1px;
+	border-bottom: solid #000 1px;
+	padding: 20px 0;
+	text-align: center;
+}
+
+	#openBurgerMenu:hover, #closeBurgerMenu:hover {
+			letter-spacing: 2px;
+		}
+
+#mobileMenu {
+	text-align: center;
+	text-transform: uppercase;
+	padding: 10px 0;
+	border-bottom: solid #000 1px;
+}
+
+	#mobileMenu li {
+		padding: 10px 0;
+	}
+
+		#mobileMenu li:hover {
+			letter-spacing: 2px;
+		}
+
+	#mobileMenu .currentPage {
+		font-weight: 700;
+		letter-spacing: 1px;
+	}
+
+	/* Larger than mobile */
+	@media (min-width: 570px) {
+		
+		#mainNav, #HeaderNavResponsive {
+			display: block;
+		}
+	
+		#openBurgerMenu, #mobileMenu, #openBurgerMenu, #closeBurgerMenu {
+			display: none;
+		}
+
+	}
+
 
 
 /*HomepageSlider*/
@@ -621,3 +679,274 @@ footer {
 		-ms-filter: blur(1px);
 		filter: blur(1px);
 	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*	Less than 1020 */
+
+@media (max-width: 1020px) {
+	
+	
+	.ControlledWidth {
+		width: 800px;
+	}
+	
+	#mainNav li {
+		width: 160px;
+	}
+		
+	
+	.HomeIntro h1 {
+		font-size: 38px;
+		line-height: 55px;
+	}
+	
+	.HomeIntro h2 {
+		font-size: 22px;
+		line-height: 34px;
+	}
+	
+	.HomeAbout h1 {
+		font-size: 45px;
+    	line-height: 60px;
+	}
+	
+	.about .rana {
+		width: 398px;
+	}
+	
+	.about .text img {
+		width: 74px;
+	}
+	
+	.about p {
+		font-size: 11px;
+		line-height: 20px;
+	}
+	
+	.about .text {
+		height: 316px;
+	}
+	
+	footer a {
+    font-size: 16px;
+	}
+	
+}
+
+/*	Less than 820 */
+
+@media (max-width: 820px) {
+	
+	
+	.ControlledWidth {
+		width: 550px;
+	}
+	
+	.HeaderLogo {
+		width: 500px;
+	}
+	
+	header.smaller .HeaderLogo {
+		width: 430px;
+	}
+	
+	#mainNav li {
+		width: 110px;
+	}
+		
+	
+	.HomeIntro h1 {
+		font-size: 26px;
+		line-height: 36px;
+	}
+	
+	.HomeIntro h2 {
+		font-size: 15px;
+		line-height: 25px;
+		margin-top: 22px;
+	}
+	
+	.HomeIntro {
+		padding: 40px 0 0px 0;
+	}
+	
+	.HomepageSlider {
+		margin-top: 34px;
+	}
+	
+	.HomeAbout {
+		padding: 50px 0;
+	}
+	
+	.HomeAbout h1 {
+		font-size: 31px;
+    	line-height: 46px;
+	}
+	
+	.about .rana {
+		width: 550px;
+		border-bottom: solid 1px;
+	}
+	
+	.about .text {
+		height: 446px;
+		width: 80%;
+    	padding: 104px 10% 0 10%;
+	}
+	
+	.about .text img {
+		width: 74px;
+	}
+	
+	.about p {
+		font-size: 15px;
+		line-height: 28px;
+	}
+	
+	footer {
+		padding: 40px 0;
+	}
+	
+	footer a {
+    font-size: 16px;
+	}
+	
+	MainViewProject {
+    	margin-top: 40px;
+	}
+	
+	.FeaturedProjects h2 {
+		font-size: 24px;
+	}
+	
+	.FeaturedProjects h3 {
+		font-size: 15px;
+	}
+	
+	.DetailedProjectLimitedWidth {
+		width: 550px;
+	}
+	
+	.DetailedProject h1 {
+    	font-size: 34px;
+	}
+	
+	.DetailedProject p {
+		font-size: 15px;
+		line-height: 25px;
+	}
+	
+	.clientmargintop {
+		margin-top: -34px;
+	}
+	
+}
+
+
+/*	Less than 500 */
+
+@media (max-width: 570px) {
+	
+	.ControlledWidth {
+		width: 300px;
+	}
+	
+	.HeaderLogo {
+		width: 280px;
+	}
+	
+	header.smaller .HeaderLogo {
+		width: 240px;
+	}
+	
+	.HomeIntro h1 {
+		font-size: 22px;
+		line-height: 31px;
+	}
+	
+	.HomeIntro h2 {
+		font-size: 15px;
+		line-height: 25px;
+		margin-top: 22px;
+	}
+	
+	.HomeAbout h1 {
+		font-size: 17px;
+    	line-height: 27px;
+	}
+	
+	.FeaturedProjects .Left,
+	.FeaturedProjects .Right {
+		width: 100%;
+		float: left;
+	}
+	
+	
+	.DetailedProjectLimitedWidth {
+		width: 300px;
+	}
+	
+	.DetailedProject h1 {
+    	 font-size: 30px;
+    	line-height: 40px;
+ 
+	}
+	
+	.DetailedProject p {
+		font-size: 14px;
+		line-height: 23px;
+	}
+	
+	.clients .heading {
+		margin-top: 30px;
+	}
+	
+	.clients h1 {
+		width: 288px;
+		font-size: 22px;
+		line-height: 30px;
+	}
+	
+	.client {
+		width: 100%;
+		float: none; 
+		margin-bottom: 10px;
+	}
+	
+	.clientmargintop {
+		margin-top: -59px;
+	}
+	
+	.clients .workedwith .client {
+		width: 49%;
+	}
+	
+	.about .rana {
+		width: 300px;
+	}
+	
+	.about .text {
+		height: 405px;
+		padding: 44px 10% 0 10%;
+		text-align: left;
+	}
+	
+	.about p {
+		font-size: 12px;
+		line-height: 21px;
+	}
+	
+}
