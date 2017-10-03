@@ -102,7 +102,6 @@ nav ul {
 	}
 
 	nav ul a:hover {
-		letter-spacing: 2px;
 		cursor: crosshair;
 		padding-top: 0px;
 	}
@@ -121,7 +120,7 @@ nav ul {
 		nav li {
 			font-style: italic;
 			text-align: center;
-			padding: 20px 0;
+			padding: 20px 0 18px 0;
 		}
 
 		nav li:hover {
@@ -137,6 +136,16 @@ nav ul {
 
 #mainNav li {
 	width: 200px;
+	font-family: 'Lato', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    text-transform: uppercase;
+    font-size: 12px;
+    letter-spacing: 1px;
+}
+
+#mainNav li:hover {
+	letter-spacing: 2px;
 }
 
 #workNav li {
@@ -153,8 +162,16 @@ nav ul {
 #openBurgerMenu, #closeBurgerMenu {
 	border-top: solid #000 1px;
 	border-bottom: solid #000 1px;
-	padding: 20px 0;
+	padding: 20px 0 18px 0;
 	text-align: center;
+	
+	font-family: 'Lato', sans-serif;
+	font-style: normal;
+	font-weight: 400;
+	text-transform: uppercase;
+	font-size: 12px;
+	letter-spacing: 1px;
+	
 }
 
 	#openBurgerMenu:hover, #closeBurgerMenu:hover {
@@ -170,6 +187,12 @@ nav ul {
 
 	#mobileMenu li {
 		padding: 10px 0;
+		font-family: 'Lato', sans-serif;
+		font-style: normal;
+		font-weight: 400;
+		text-transform: uppercase;
+		font-size: 12px;
+		letter-spacing: 1px;
 	}
 
 		#mobileMenu li:hover {
@@ -369,13 +392,16 @@ footer {
 	footer a {
 		text-decoration: none;
 		color: #000;
-		font-style: italic;
-		font-size: 20px;
-		letter-spacing: 0.03em;
+		font-family: 'Lato', sans-serif;
+		font-style: normal;
+		font-weight: 400;
+		text-transform: uppercase;
+		font-size: 16px;
+		letter-spacing: 1px;
 	}
 
 	footer a:hover {
-		text-decoration: underline;
+		letter-spacing: 2px;
 	}
 
 
