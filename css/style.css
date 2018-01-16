@@ -102,9 +102,9 @@ nav ul {
 	}
 
 	nav ul a:hover {
-		letter-spacing: 2px;
 		cursor: crosshair;
 		padding-top: 0px;
+		font-style: italic;
 	}
 
 	nav ul .currentPage {
@@ -119,7 +119,7 @@ nav ul {
 	}
 
 		nav li {
-			font-style: italic;
+			
 			text-align: center;
 			padding: 20px 0;
 		}
@@ -173,7 +173,7 @@ nav ul {
 	}
 
 		#mobileMenu li:hover {
-			letter-spacing: 2px;
+			font-style: italic;
 		}
 
 	#mobileMenu .currentPage {
