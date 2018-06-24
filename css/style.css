@@ -548,37 +548,26 @@ footer {
 		letter-spacing: 0.01em;
 		font-weight: 400;
 		
-		
-		
 		margin: -18px auto 0 auto;
 		display: block;
 	}
 
-	.client {
-		width: 50%;
+    .clients .designedbyletterlust, .clients .workedwith {
+        overflow: hidden
+    }
+
+	.clients img {
+		width: 25%;
 		float: left;
-		margin-top: -40px;
 	}
 
-		.client:hover {
+		.clients img:hover {
 			opacity: 0.5;
 		}
 
 
-	.clientmargintop {
-		margin-top: -60px;
-	}
-
-
 	.clients .workedwith {
 		margin-bottom: 60px;
-		overflow: hidden;
-	}
-
-
-	.clients .workedwith .client {
-		width: 25%;
-		margin-top: 0;
 	}
 
 
