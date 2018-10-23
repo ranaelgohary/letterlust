@@ -1027,5 +1027,9 @@ footer .InstagramFooterIcon {
     .contact .text h1 {
         font-size: 45px;
     }
+    
+    .contact .text p {
+        letter-spacing: 0.02em;
+    }
 
 }
