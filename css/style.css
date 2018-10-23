@@ -47,7 +47,7 @@ p {
 
 .CTA {
     text-align: center;
-    padding: 26px;
+    padding: 25px 26px 26px 26px;
     width: 200px;
     margin: 0 auto;
     border: solid 1px #000;
@@ -181,7 +181,6 @@ nav ul a {
 }
 
 nav ul a:hover {
-    cursor: crosshair;
     padding-top: 0px;
     font-style: italic;
 }
@@ -199,10 +198,6 @@ nav li {
     padding: 20px 0 23px 0;
     float: left;
     width: 20%;
-}
-
-nav li:hover {
-    cursor: crosshair;
 }
 
 #mainNav {
@@ -557,7 +552,7 @@ nav li:hover {
 .contact .text p {
     font-size: 18px;
     line-height: 28px;
-    letter-spacing: 1px;
+    letter-spacing: 0.05em;
     width: 90%;
 }
 
@@ -774,7 +769,6 @@ footer .InstagramFooterIcon {
 
 .about p a:hover {
 
-    cursor: crosshair;
     border-bottom: solid rgba(0, 0, 0, 1) 1px;
 
     -webkit-filter: blur(1px);
@@ -845,7 +839,7 @@ footer .InstagramFooterIcon {
     }
 
     header.smaller .HeaderLogo {
-        width: 430px;
+        width: 400px;
     }
 
     #mainNav li {
