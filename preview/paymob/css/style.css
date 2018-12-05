@@ -25,7 +25,6 @@
 
 body {
     font-family: 'archiaregular';
-    
 }
 
 
@@ -94,7 +93,7 @@ h3 {
     border: solid 1px #fff;
 }
 
-.CTA-blue, .CTA-teal {
+.CTA-blue, .CTA-teal, .CTA-blue-blue {
     color: #fff;
 }
 
@@ -108,6 +107,11 @@ h3 {
     background: #1E6EF5;
 }
 
+.CTA-blue-blue div {
+    border: solid 1px #1E6EF5;
+    background: #1E6EF5;
+}
+
 .CTA-white div:hover, .CTA-blue div:hover {
     background: none;
     color: #fff;
@@ -117,6 +121,12 @@ h3 {
 .CTA-teal div:hover {
     background: #64FAFA;
     color: #1E6EF5;
+}
+
+.CTA-blue-blue div:hover {
+    background: #64FAFA;
+    color: #1E6EF5;
+    border: solid 1px #64FAFA;
 }
 
 
@@ -177,6 +187,10 @@ nav li {
     font-size: 14px;
 }
 
+.current-page {
+    font-family: 'archiasemibold';
+}
+
 #get-in-touch-cta {
     text-align: right;
 }
@@ -191,22 +205,13 @@ nav li {
 /*Homepage Intro*/
 
 .homepage-intro {
-   
-}
-
-.homepage-intro video {
-    position: fixed;
-    top: 0;
-    z-index: -5;
-    min-height: 100%;
-    max-height: 100%;
-    min-width: 100%;
-    max-width: 100%;
+    background: #105EE2;
+    padding: 190px 0 290px 0;
+    margin-top: -80px;
 }
 
 .homepage-intro .content {
     text-align: center;
-    margin: 120px 0;
 }
 
 .homepage-intro .content h2 {
@@ -225,7 +230,9 @@ nav li {
 
 /*Homepage Solution for You*/
 
-
+.solution-for-you {
+    margin-top: -150px;
+}
 
 .solution-for-you .white-circle {
     width: 100%;
@@ -329,6 +336,128 @@ nav li {
 .client {
     width: 19%;
     height: auto;
+}
+
+
+
+/*Products Page*/
+
+
+.products h3 {
+    margin: 80px 0;
+}
+
+
+.products-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    
+    position: relative;
+    z-index: 5;
+}
+
+.products-container .product {
+    background: #1E6EF5;
+    border-radius: 5px;
+    width: 19%;
+    padding: 4% 2%;
+    margin: 0 1% 2% 1%;
+    text-align: center;
+}
+
+.products-container .product img {
+    height:  70px;
+}
+
+.products-container .product h5 {
+    font-family: 'archiasemibold';
+    color: #fff;
+    font-size: 15px;
+    line-height: 1.4;
+    margin: 20px 0;
+}
+
+.products-container .product p {
+    color: #fff;
+    line-height: 1.6;
+    font-size: 12px;
+}
+
+
+
+/*CTA Section*/
+
+.CTA-section {
+    padding: 100px 0;
+    text-align: center;
+}
+
+.CTA-section h4 {
+    font-size: 50px;
+}
+
+.CTA-section h5 {
+    font-size: 18px;
+    line-height: 2;
+    color: #646464;
+    margin: 22px auto 30px auto;
+    width: 580px;
+}
+
+.CTA-section .CTA {
+    margin: 0 auto;
+}
+
+
+
+/*Contact*/
+
+.contact {
+    display: flex;
+}
+
+.contact > section {
+    width: 40%;
+    padding: 5%;
+}
+
+.contact-us {
+    background: #fff;
+}
+
+.email-us {
+    background: #2882FF;
+}
+
+.contact h1 {
+    font-size: 30px;
+}
+
+.contact h2 {
+    font-size: 16px;
+    line-height: 1.8;
+    color: #646464;
+    margin-top: 25px;
+}
+
+.contact h3 {
+    font-family: 'archiasemibold';
+    font-size: 16px;
+    line-height: 1.8;
+    
+    margin-top: 50px;
+    margin-bottom: 5px;
+}
+
+.contact p {
+    font-size: 16px;
+    line-height: 1.8;
+    color: #646464;
+}
+
+.contact p a {
+    color: #646464;
 }
 
 
