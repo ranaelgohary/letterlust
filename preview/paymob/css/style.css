@@ -56,7 +56,7 @@ h1 {
 
 h2 {
     font-size: 20px;
-    line-height: 1.8em; 
+    line-height: 1.8em;
 }
 
 
@@ -91,28 +91,55 @@ h3 {
 .CTA-white div {
     background: #fff;
     border: solid 1px #fff;
+
+    -webkit-transition: all 0.1s ease-in-out;
+    -moz-transition: all 0.1s ease-in-out;
+    -o-transition: all 0.1s ease-in-out;
+    -ms-transition: all 0.1s ease-in-out;
+    transition: all 0.1s ease-in-out;
 }
 
-.CTA-blue, .CTA-teal, .CTA-blue-blue {
+.CTA-blue,
+.CTA-teal,
+.CTA-blue-blue {
     color: #fff;
 }
 
 .CTA-blue div {
     background: #1E6EF5;
     border: solid 1px #1E6EF5;
+
+    -webkit-transition: all 0.1s ease-in-out;
+    -moz-transition: all 0.1s ease-in-out;
+    -o-transition: all 0.1s ease-in-out;
+    -ms-transition: all 0.1s ease-in-out;
+    transition: all 0.1s ease-in-out;
 }
 
 .CTA-teal div {
     border: solid 1px #64FAFA;
     background: #1E6EF5;
+
+    -webkit-transition: all 0.1s ease-in-out;
+    -moz-transition: all 0.1s ease-in-out;
+    -o-transition: all 0.1s ease-in-out;
+    -ms-transition: all 0.1s ease-in-out;
+    transition: all 0.1s ease-in-out;
 }
 
 .CTA-blue-blue div {
     border: solid 1px #1E6EF5;
     background: #1E6EF5;
+
+    -webkit-transition: all 0.1s ease-in-out;
+    -moz-transition: all 0.1s ease-in-out;
+    -o-transition: all 0.1s ease-in-out;
+    -ms-transition: all 0.1s ease-in-out;
+    transition: all 0.1s ease-in-out;
 }
 
-.CTA-white div:hover, .CTA-blue div:hover {
+.CTA-white div:hover,
+.CTA-blue div:hover {
     background: none;
     color: #fff;
     border: solid 1px #fff;
@@ -221,7 +248,7 @@ nav li {
 
 .homepage-intro .content .CTAs {
     display: flex;
-    justify-content:space-between;
+    justify-content: space-between;
     width: 440px;
 }
 
@@ -246,10 +273,10 @@ nav li {
 .solution-for-you .we-work-in {
     width: 712px;
     margin: 40px auto;
-    
+
     display: flex;
     justify-content: space-between;
-    
+
     font-size: 20px;
 }
 
@@ -268,8 +295,8 @@ nav li {
     margin-top: 100px;
     display: flex;
     justify-content: space-around;
-    
-    
+
+
     position: relative;
     z-index: 5;
 }
@@ -283,7 +310,7 @@ nav li {
 }
 
 .homepage-products .product img {
-    height:  40%;
+    height: 40%;
 }
 
 .homepage-products .product h5 {
@@ -303,9 +330,9 @@ nav li {
 
 .solution-for-you .CTA {
     margin: 80px auto 0 auto;
-    
-    
-    
+
+
+
     position: relative;
     z-index: 5;
 }
@@ -352,7 +379,7 @@ nav li {
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
-    
+
     position: relative;
     z-index: 5;
 }
@@ -367,7 +394,7 @@ nav li {
 }
 
 .products-container .product img {
-    height:  70px;
+    height: 70px;
 }
 
 .products-container .product h5 {
@@ -445,8 +472,8 @@ nav li {
     font-family: 'archiasemibold';
     font-size: 16px;
     line-height: 1.8;
-    
-    margin-top: 50px;
+
+    margin-top: 55px;
     margin-bottom: 5px;
 }
 
@@ -460,6 +487,89 @@ nav li {
     color: #646464;
 }
 
+.contact .email-us h1 {
+    color: #fff;
+}
+
+
+/*Contact Form*/
+
+
+.contact form {
+    width: 100%;
+    margin-top: 30px;
+}
+
+.contact form .input,
+.contact form textarea {
+    background: none;
+    border: solid #fff 2px;
+    margin-bottom: 18px;
+    
+    font-family: 'archiaregular';
+
+    font-size: 16px;
+    font-weight: 300;
+    color: #fff;
+
+    padding: 14px;
+    border-radius: 2px;
+    width: 350px;
+}
+
+.contact form .input:focus,
+.contact form textarea:focus {
+    outline: none !important;
+    box-shadow: none;
+    border: solid #64FAFA 2px;
+}
+
+.contact form textarea {
+    height: 75px;
+    resize: vertical;
+}
+
+.contact ::placeholder {
+    color: #fff;
+}
+
+
+.contact form #submit {
+    background: #fff;
+    color: #1E6EF5;
+    border: solid 1px #fff;
+
+    padding: 22px 28px;
+    margin: 0;
+    width: 190px;
+    display: block;
+
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5;
+
+    text-shadow: none;
+    
+    font-size: 16px;
+    text-align: center;
+
+    -webkit-transition: all 0.1s ease-in-out;
+    -moz-transition: all 0.1s ease-in-out;
+    -o-transition: all 0.1s ease-in-out;
+    -ms-transition: all 0.1s ease-in-out;
+    transition: all 0.1s ease-in-out;
+}
+
+.contact form #submit:hover {
+    background: none;
+    color: #fff;
+    border: solid 1px #fff;
+}
+
+
+
+
+
 
 /*Footer*/
 
@@ -469,11 +579,11 @@ footer {
     display: flex;
     justify-content: space-between;
     color: #fff;
-    
+
 }
 
 footer a {
-   color: #fff;
+    color: #fff;
 }
 
 footer .paymob-logo {
