@@ -11,6 +11,7 @@
     <!-- css -->
     <link rel="stylesheet" type="text/css" href="css/reset.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/hamburgers.css" rel="stylesheet">
 
 </head>
 
@@ -23,140 +24,90 @@
             <a href="index.html"><img src="img/generic/paymob-logo-white.svg"></a>
         </div>
 
-        <ul class="flex-2">
+        <ul class="flex-2 desktop-nav">
             <a href="index.html">
                 <li>Home</li>
             </a>
+
             <a href="products.html">
                 <li>Products</li>
             </a>
-            <!--
-<a href="#">
-    <li>Case Studies</li>
-</a>
--->
+
+            <a href="casestudies_main.html">
+                <li>Case Studies</li>
+            </a>
+
             <a href="about.html">
                 <li class="current-page">About</li>
             </a>
         </ul>
 
-        <div class="flex-3" id="get-in-touch-cta">
+        <div class="flex-3 desktop-nav" id="get-in-touch-cta">
             <a href="contact.html">
                 <li>Get in Touch</li>
             </a>
         </div>
 
-    </nav>
+        <div class="hamburger hamburger--3dy" type="button" id="burger-button">
+            <span class="hamburger-box">
+                <span class="hamburger-inner"></span>
+            </span>
+        </div>
 
-    <section class="products products-nofilter">
+        <div id="mobileMenu" class="mobileMenuInactive">
 
-        <h3 class="heading centre">Find solutions that are right for you</h3>
+            <ul id="mobileMenuUl" class="UlTransparent">
 
-        <div class="products-container">
+                <a href="index.html">
+                    <li>Home</li>
+                </a>
 
-            <div class="product">
-                <img src="img/products/risk.svg">
-                <h5>Risk & Fraud Management</h5>
-                <p>Integrating different data analytics modules, in order to avail fraud detection & decrease the risk of irregular transactions.</p>
-            </div>
+                <a href="products.html">
+                    <li>Products</li>
+                </a>
 
-            <div class="product">
-                <img src="img/products/promo-management.svg">
-                <h5>Promo Management</h5>
-                <p>Integrating different data analytics modules, in order to avail fraud detection & decrease the risk of irregular transactions.</p>
-            </div>
+                <a href="casestudies_main.html">
+                    <li>Case Studies</li>
+                </a>
 
-            <div class="product">
-                <img src="img/products/international-remittance.svg">
-                <h5>International Remittance</h5>
-                <p>Integrating different data analytics modules, in order to avail fraud detection & decrease the risk of irregular transactions.</p>
-            </div>
+                <a href="about.html">
+                    <li class="current-page">About</li>
+                </a>
 
-            <div class="product">
-                <img src="img/products/reports-and-analytics.svg">
-                <h5>Reports and Analytics</h5>
-                <p>Integrating different data analytics modules, in order to avail fraud detection & decrease the risk of irregular transactions.</p>
-            </div>
+                <a href="contact.html">
+                    <li>Get in Touch</li>
+                </a>
 
-
-
-
-            <div class="product">
-                <img src="img/products/PWP.svg">
-                <h5>PWP - Paymob Wallet Processor</h5>
-                <p>Integrating different data analytics modules, in order to avail fraud detection & decrease the risk of irregular transactions.</p>
-            </div>
-
-            <div class="product">
-                <img src="img/products/agent-banking.svg">
-                <h5>Agent Banking</h5>
-                <p>Integrating different data analytics modules, in order to avail fraud detection & decrease the risk of irregular transactions.</p>
-            </div>
-
-            <div class="product">
-                <img src="img/products/disbursement.svg">
-                <h5>Disbursement</h5>
-                <p>Integrating different data analytics modules, in order to avail fraud detection & decrease the risk of irregular transactions.</p>
-            </div>
-
-            <div class="product">
-                <img src="img/products/payment-collection.svg">
-                <h5>Payment Collection</h5>
-                <p>Integrating different data analytics modules, in order to avail fraud detection & decrease the risk of irregular transactions.</p>
-            </div>
-
-
-
-
-            <div class="product">
-                <img src="img/products/loyalty.svg">
-                <h5>Loyalty</h5>
-                <p>Integrating different data analytics modules, in order to avail fraud detection & decrease the risk of irregular transactions.</p>
-            </div>
-
-            <div class="product">
-                <img src="img/products/terminal-management.svg">
-                <h5>Terminal Management</h5>
-                <p>Integrating different data analytics modules, in order to avail fraud detection & decrease the risk of irregular transactions.</p>
-            </div>
-
-            <div class="product">
-                <img src="img/products/eKYC.svg">
-                <h5>eKYC</h5>
-                <p>Integrating different data analytics modules, in order to avail fraud detection & decrease the risk of irregular transactions.</p>
-            </div>
-
-            <div class="product">
-                <img src="img/products/billpayments-topups.svg">
-                <h5>Bill Payments/Topup</h5>
-                <p>Integrating different data analytics modules, in order to avail fraud detection & decrease the risk of irregular transactions.</p>
-            </div>
-
-
-
-
-            <div class="product">
-                <img src="img/products/ticketing-management.svg">
-                <h5>Ticketing Management</h5>
-                <p>Integrating different data analytics modules, in order to avail fraud detection & decrease the risk of irregular transactions.</p>
-            </div>
-
-            <div class="product">
-                <img src="img/products/merchant-acceptance.svg">
-                <h5>Merchant Acceptance</h5>
-                <p>Integrating different data analytics modules, in order to avail fraud detection & decrease the risk of irregular transactions.</p>
-            </div>
-
+            </ul>
 
         </div>
 
-    </section>
+    </nav>
+
+    <div class="about nav-space">
+
+        <section class="about-white">
+
+            <h1>Towards a<br>cashless society</h1>
+            <p>Paymob is an infrastructure technology enabler providing payment solutions to empower digital financial service providers across Africa and the Middle East through innovative mobile wallet technology that gives the institute’s clients access to finance and digital payments. Paymob aims to contribute to the financial inclusion movement, while targeting economic growth by implementing solutions that support a cashless society ecosystem.</p>
+
+        </section>
+
+        <section class="about-blue">
+
+            <h1>We stand for<br>financial inclusion</h1>
+            <p><span>Mission:</span><br>Building a cashless society ecosystem<br><br>
+                <span>Vision:</span><br>Achieving economic growth through financial inclusion<br><br></p>
+
+        </section>
+
+    </div>
 
     <section class="CTA-section">
-        <h4>Got a Question?</h4>
-        <h5>Request a representative to meet with your team and explain our services and find out how we could help you</h5>
+        <h4>Want to join the team?</h4>
+        <h5>Apply to join our fast growing team who is at the cutting edge of implementing state of the art payments solutions</h5>
         <a href="contact.html" class="CTA-blue-blue">
-            <div class="CTA">Get in Touch</div>
+            <div class="CTA">Careers</div>
         </a>
     </section>
 
@@ -169,10 +120,10 @@
 
         <div class="flex2">
             <h5>Quick Links</h5>
-            <a href="#">
+            <a href="about.html">
                 <h6>About</h6>
             </a>
-            <a href="#">
+            <a href="products.html">
                 <h6>Solutions</h6>
             </a>
         </div>
@@ -191,6 +142,24 @@
         </div>
 
     </footer>
+
+    <!--Hamburger Button Animation-->
+
+    <script>
+        // Look for .hamburger
+        var hamburger = document.querySelector(".hamburger");
+        var mobileMenu = document.querySelector("#mobileMenu");
+        var mobileMenuUl = document.querySelector("#mobileMenuUl");
+        // On click
+        hamburger.addEventListener("click", function() {
+            // Toggle class "is-active"
+            hamburger.classList.toggle("is-active");
+            // Open Menu
+            mobileMenu.classList.toggle("mobileMenuActive");
+            // Show Links
+            mobileMenuUl.classList.toggle("UlOpaque");
+        });
+    </script>
 
 </body>
 
