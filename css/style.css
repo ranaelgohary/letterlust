@@ -1,7 +1,15 @@
+@font-face {
+    font-family: 'Butler';
+    src: url('../fonts/Butler-Light.woff2') format('woff2'),
+        url('Butler-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
+
 body {
 
-    font-family: 'EB Garamond', serif;
-    font-weight: 400;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
     text-align: center;
 
 }
@@ -30,9 +38,10 @@ a:hover {
 }
 
 h1 {
+    font-family: 'Butler', serif;
+    font-weight: 300;
     font-size: 45px;
     line-height: 1.3em;
-    font-weight: 500;
 }
 
 h2 {
@@ -48,18 +57,15 @@ p {
 
 .CTA {
     text-align: center;
-    padding: 25px 26px 26px 26px;
-    width: 200px;
+    padding: 15px 16px 16px 16px;
+    width: 140px;
     margin: 0 auto;
     border: solid 1px #000;
     margin-top: 30px;
     background: rgba(255, 255, 255, 0.1);
-
-    /*
-    -moz-box-shadow: 1px 3px 10px 1px rgba(0, 0, 0, 0.1);
-    -webkit-box-shadow: 1px 3px 10px 1px rgba(0, 0, 0, 0.1);
-    box-shadow: 1px 3px 10px 1px rgba(0, 0, 0, 0.1);
-*/
+    font-weight: 400;
+    font-size: 12px;
+    letter-spacing: 0.07em;
 
 
     -webkit-transition: all 0.1s;
@@ -74,8 +80,8 @@ p {
 .CTA:hover {
     background: #184336;
     color: #fff;
-    width: 220px;
-    letter-spacing: 0.1em;
+    width: 160px;
+    letter-spacing: 0.2em;
     cursor: pointer;
 }
 
@@ -131,12 +137,18 @@ p {
 
 /*Header*/
 
+header {
+    background: rgb(255, 255, 255, 0.3);
+/*    background-image: url("../img/MainElements/stripe.png");*/
+    background-repeat: repeat;
+}
+
 
 .HeaderLogo {
     display: block;
     margin: 0 auto;
-    width: 450px;
-    padding: 52px 12px 46px 0;
+    width: 220px;
+    padding: 32px 12px 26px 0;
 
     -webkit-transition: all 0.3s;
     -moz-transition: all 0.3s;
@@ -149,15 +161,16 @@ header.smaller .HeaderLogo {
 
     display: block;
     margin: 0 auto;
-    width: 380px;
-    padding: 42px 12px 36px 0;
+    width: 190px;
+    padding: 32px 12px 26px 0;
 
 }
 
 nav {
-    border-bottom: solid #000 1px;
+    
     border-top: solid #000 1px;
-
+/*    border-bottom: solid #000 1px;*/
+    
     overflow: hidden;
     margin-left: -20px;
     opacity: 0;
@@ -165,7 +178,11 @@ nav {
 
 nav ul {
     overflow: hidden;
-    font-size: 20px;
+    
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    
     width: 100%;
 }
 
@@ -173,30 +190,21 @@ nav ul a {
 
     text-decoration: none;
     color: #000;
-
-    -webkit-transition: all 0.3s;
-    -moz-transition: all 0.3s;
-    -ms-transition: all 0.3s;
-    -o-transition: all 0.3s;
-    transition: all 0.3s;
 }
 
 nav ul a:hover {
-    padding-top: 0px;
-    font-style: italic;
+    font-weight: 400;
 }
 
 nav .currentPage {
-    border-bottom: solid #000 2px;
-    border-top: solid #000 2px;
-    padding-top: 0px;
-    font-style: italic;
+    font-weight: 400;
+    letter-spacing: 1px;
 }
 
 nav li {
 
     text-align: center;
-    padding: 20px 0 23px 0;
+    padding: 23px 0 23px 0;
     float: left;
     width: 20%;
 }
@@ -308,12 +316,14 @@ nav li {
 
 
 .HomeAbout {
-    padding: 60px 0 15px 0;
+    padding: 100px 0 40px 0;
 
 }
 
 .HomeAbout h1 {
-    font-size: 55px;
+    font-family: 'Butler', serif;
+    font-weight: 300;
+    font-size: 46px;
     line-height: 1.35em;
     text-align: center;
     max-width: 900px;
@@ -321,7 +331,7 @@ nav li {
 }
 
 .HomeAbout p {
-    font-size: 20px;
+    font-size: 18px;
     line-height: 2em;
     letter-spacing: 0.02em;
     text-align: center;
@@ -332,7 +342,7 @@ nav li {
 /*Homepage CTA to Projects Section*/
 
 .GenericSection {
-    padding: 100px 0;
+    padding: 120px 0;
 }
 
 .GenericSection p {
@@ -345,9 +355,9 @@ nav li {
 /*Testimonial*/
 
 .testimonials {
-
+    font-family: 'EB Garamond', serif;
     background: #184336;
-    color: #fff;
+    color: #bae3e0;
     text-align: center;
     padding: 200px 0;
 
@@ -355,6 +365,7 @@ nav li {
 
 .testimonials q {
     quotes: "“""”""‘""’";
+    font-weight: 400;
     font-style: italic;
     font-size: 30px;
     line-height: 1.6em;
@@ -431,9 +442,6 @@ nav li {
     margin-top: -12px;
     text-align: center;
     color: #ffdbdb;
-
-    font-family: 'Roboto', sans-serif;
-    font-weight: 300;
 }
 
 
@@ -449,7 +457,7 @@ nav li {
 
 .ProjectType {
     width: 100%;
-    margin-top: 22px;
+    margin-top: 72px;
 }
 
 .ProjectType li {
@@ -458,10 +466,8 @@ nav li {
     width: 18%;
     margin: 1%;
     padding: 10px 0;
-    background: rgba(180, 180, 180, 0.15);
-
-    font-family: 'Roboto', sans-serif;
-    font-weight: 300;
+    background: #ffdbdb;
+    color: #184336;
     font-size: 14px;
 }
 
@@ -477,7 +483,6 @@ nav li {
 /*Detailed Projects*/
 
 .ProjectInfo {
-    font-family: 'Roboto', sans-serif;
     text-align: left;
     margin-top: 35px;
     margin-bottom: 35px;
@@ -592,8 +597,7 @@ nav li {
 }
 
 .contact button {
-    font-family: 'EB Garamond', serif;
-    font-size: 16px;
+    font-size: 12px;
 }
 
 .contact textarea:focus,
@@ -605,6 +609,9 @@ nav li {
 
 
 footer {
+    font-family: 'Butler', serif;
+    font-weight: 300;
+    letter-spacing: 1px;
     background: #46141b;
     padding: 60px 0;
     text-align: center;
@@ -613,7 +620,6 @@ footer {
 
 footer a {
     text-decoration: none;
-    font-style: italic;
     font-size: 22px;
     letter-spacing: 0.03em;
     color: #ffdbdb;
@@ -717,6 +723,7 @@ footer .InstagramFooterIcon {
 .clients img {
     width: 25%;
     float: left;
+    margin-bottom: 40px;
 }
 
 .clients img:hover {
@@ -763,6 +770,7 @@ footer .InstagramFooterIcon {
 }
 
 .about h2 {
+    font-family: 'Butler', serif;
     margin-bottom: 20px;
 }
 

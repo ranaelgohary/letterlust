@@ -11,7 +11,6 @@
     <!-- css -->
     <link rel="stylesheet" type="text/css" href="css/reset.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
-    <link rel="stylesheet" type="text/css" href="css/hamburgers.css" rel="stylesheet">
 
 </head>
 
@@ -24,99 +23,56 @@
             <a href="index.html"><img src="img/generic/paymob-logo-white.svg"></a>
         </div>
 
-        <ul class="flex-2 desktop-nav">
+        <ul class="flex-2">
             <a href="index.html">
                 <li>Home</li>
             </a>
-
             <a href="products.html">
                 <li>Products</li>
             </a>
-
-            <a href="casestudies_main.html">
-                <li>Case Studies</li>
-            </a>
-
+            <!--
+<a href="#">
+    <li>Case Studies</li>
+</a>
+-->
             <a href="about.html">
                 <li>About</li>
             </a>
         </ul>
 
-        <div class="flex-3 desktop-nav" id="get-in-touch-cta">
+        <div class="flex-3" id="get-in-touch-cta">
             <a href="contact.html">
                 <li class="current-page">Get in Touch</li>
             </a>
         </div>
 
-        <div class="hamburger hamburger--3dy" type="button" id="burger-button">
-            <span class="hamburger-box">
-                <span class="hamburger-inner"></span>
-            </span>
-        </div>
-
-        <div id="mobileMenu" class="mobileMenuInactive">
-
-            <ul id="mobileMenuUl" class="UlTransparent">
-
-                <a href="index.html">
-                    <li>Home</li>
-                </a>
-
-                <a href="products.html">
-                    <li>Products</li>
-                </a>
-
-                <a href="casestudies_main.html">
-                    <li>Case Studies</li>
-                </a>
-
-                <a href="about.html">
-                    <li>About</li>
-                </a>
-
-                <a href="contact.html">
-                    <li class="current-page">Get in Touch</li>
-                </a>
-
-            </ul>
-
-        </div>
-
     </nav>
 
-    <div class="contact nav-space">
+    <div class="contact">
 
         <section class="contact-us">
 
-            <div class="content">
+            <h1>Contact Us</h1>
+            <h2>For customer support, requesting a demo,<br>
+                or sales inquiries, please get in touch.</h2>
 
-                <h1>Contact Us</h1>
-                <h2>For customer support, requesting a demo,<br>
-                    or sales inquiries, please get in touch.</h2>
+            <h3>Address</h3>
+            <p>92 El Tahrir,<br>Ad Dawawin, Abdeen,<br>Cairo Governorate.</p>
 
-                <h3>Address</h3>
-                <p>92 El Tahrir,<br>Ad Dawawin, Abdeen,<br>Cairo Governorate.</p>
-
-                <h3>E-mail</h3>
-                <p><a href="inquiries@paymobsolutions.com">inquiries@paymobsolutions.com</a></p>
-
-            </div>
+            <h3>E-mail</h3>
+            <p><a href="inquiries@paymobsolutions.com">inquiries@paymobsolutions.com</a></p>
 
         </section>
 
         <section class="email-us">
 
-            <div class="content">
-
-                <h1>E-mail Us</h1>
-                <form method="POST" form action="contact.php">
-                    <input class="input" type="text" name="name" placeholder="Full Name">
-                    <input class="input" type="email" name="email" placeholder="E-mail">
-                    <textarea name="message" placeholder="Message"></textarea>
-                    <input id="submit" type="submit" value="Submit">
-                </form>
-
-            </div>
+            <h1>E-mail Us</h1>
+            <form method="POST" form action="contact.php">
+                <input class="input" type="text" name="name" placeholder="Full Name">
+                <input class="input" type="email" name="email" placeholder="E-mail">
+                <textarea name="message" placeholder="Message"></textarea>
+                <input id="submit" type="submit" value="Submit">
+            </form>
 
         </section>
 
@@ -131,10 +87,10 @@
 
         <div class="flex2">
             <h5>Quick Links</h5>
-            <a href="about.html">
+            <a href="#">
                 <h6>About</h6>
             </a>
-            <a href="products.html">
+            <a href="#">
                 <h6>Solutions</h6>
             </a>
         </div>
@@ -153,24 +109,6 @@
         </div>
 
     </footer>
-
-    <!--Hamburger Button Animation-->
-
-    <script>
-        // Look for .hamburger
-        var hamburger = document.querySelector(".hamburger");
-        var mobileMenu = document.querySelector("#mobileMenu");
-        var mobileMenuUl = document.querySelector("#mobileMenuUl");
-        // On click
-        hamburger.addEventListener("click", function() {
-            // Toggle class "is-active"
-            hamburger.classList.toggle("is-active");
-            // Open Menu
-            mobileMenu.classList.toggle("mobileMenuActive");
-            // Show Links
-            mobileMenuUl.classList.toggle("UlOpaque");
-        });
-    </script>
 
 </body>
 

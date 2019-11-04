@@ -65,5 +65,84 @@ $(document).ready(function () {
         $('h1').delay(300).animate({'opacity':'1'},800);
         $('h2').delay(400).animate({'opacity':'1'},800);
         $('.CTA').delay(500).animate({'opacity':'1'},800);
+    
+    
+    
+    $("#all-projects").click(
+        function () {
+            $(".brand-identity").show(400);
+            $(".sales-decks").show(400);
+            $(".web-design").show(400);
+            $(".print-design").hide(400);
+            
+            $("#all-projects").addClass( "selected" );
+            $("#brand-identity").removeClass( "selected" );
+            $("#sales-decks").removeClass( "selected" );
+            $("#web-design").removeClass( "selected" );
+            $("#print-design").removeClass( "selected" );
+            
+            
+        }
+    );
+    
+    $("#brand-identity").click(
+        function () {
+            $(".brand-identity").show(400);
+            $(".sales-decks").hide(400);
+            $(".web-design").hide(400);
+            $(".print-design").hide(400);
+            
+            $("#all-projects").removeClass("selected");
+            $("#brand-identity").addClass("selected");
+            $("#sales-decks").removeClass("selected");
+            $("#web-design").removeClass("selected");
+            $("#print-design").removeClass("selected");
+        }
+    );
+    
+    $("#sales-decks").click(
+        function () {
+            $(".brand-identity").hide(400);
+            $(".sales-decks").show(400);
+            $(".web-design").hide(400);
+            $(".print-design").hide(400);
+            
+            $("#all-projects").removeClass( "selected" );
+            $("#brand-identity").removeClass( "selected" );
+            $("#sales-decks").addClass( "selected" );
+            $("#web-design").removeClass( "selected" );
+            $("#print-design").removeClass( "selected" );
+        }
+    );
+    
+    $("#web-design").click(
+        function () {
+            $(".brand-identity").hide(400);
+            $(".sales-decks").hide(400);
+            $(".web-design").show(400);
+            $(".print-design").hide(400);
+            
+            $("#all-projects").removeClass( "selected" );
+            $("#brand-identity").removeClass( "selected" );
+            $("#sales-decks").removeClass( "selected" );
+            $("#web-design").addClass( "selected" );
+            $("#print-design").removeClass( "selected" );
+        }
+    );
+    
+    $("#print-design").click(
+        function () {
+            $(".brand-identity").hide(400);
+            $(".sales-decks").hide(400);
+            $(".web-design").hide(400);
+            $(".print-design").show(400);
+            
+            $("#all-projects").removeClass( "selected" );
+            $("#brand-identity").removeClass( "selected" );
+            $("#sales-decks").removeClass( "selected" );
+            $("#web-design").removeClass( "selected" );
+            $("#print-design").addClass( "selected" );
+        }
+    );
 
 });
