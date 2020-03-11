@@ -144,5 +144,46 @@ $(document).ready(function () {
             $("#print-design").addClass( "selected" );
         }
     );
+    
+    
+    
+    $("#TestimonialsKey1").click(
+        function () {
+            
+            $("#Testimonial1").show(400);
+            $("#Testimonial2").hide(400);
+            $("#Testimonial3").hide(400);
+            
+            $("#TestimonialsKey1").addClass( "SelectedKey" );
+            $("#TestimonialsKey2").removeClass( "SelectedKey" );
+            $("#TestimonialsKey3").removeClass( "SelectedKey" );
+        }
+    );
+    
+    $("#TestimonialsKey2").click(
+        function () {
+            
+            $("#Testimonial1").hide(400);
+            $("#Testimonial2").show(400);
+            $("#Testimonial3").hide(400);
+            
+            $("#TestimonialsKey1").removeClass( "SelectedKey" );
+            $("#TestimonialsKey2").addClass( "SelectedKey" );
+            $("#TestimonialsKey3").removeClass( "SelectedKey" );
+        }
+    );
+    
+    $("#TestimonialsKey3").click(
+        function () {
+            
+            $("#Testimonial1").hide(400);
+            $("#Testimonial2").hide(400);
+            $("#Testimonial3").show(400);
+            
+            $("#TestimonialsKey1").removeClass( "SelectedKey" );
+            $("#TestimonialsKey2").removeClass( "SelectedKey" );
+            $("#TestimonialsKey3").addClass( "SelectedKey" );
+        }
+    );
 
 });

@@ -359,7 +359,7 @@ nav li {
     background: #184336;
     color: #bae3e0;
     text-align: center;
-    padding: 200px 0;
+    padding: 140px 0;
 
 }
 
@@ -380,10 +380,39 @@ nav li {
 }
 
 .testimonials h2 {
-    font-size: 14px;
+    font-size: 16px;
     font-style: normal;
     margin-top: 50px;
+    margin-bottom: 60px;
 }
+
+#TestimonialControls {
+    width: 96px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+#TestimonialControls > div {
+    background: #bae3e0;
+    width: 22px;
+    height: 4px;
+    margin: 0 5px;
+    float: left;
+    opacity: 20%;
+}
+
+#TestimonialControls > div:hover {
+    cursor: pointer;
+}
+
+#TestimonialControls .SelectedKey {
+    opacity: 100%;
+}
+
+#Testimonial2, #Testimonial3 {
+    display: none;
+}
+
 
 
 /*Featured Projects*/
