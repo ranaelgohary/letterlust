@@ -36,6 +36,28 @@ body {
 
 
 
+/*Text Hierarchy */
+
+h1 {
+    font-family: 'bebasneue-bold';
+    font-size: 60px;
+    text-transform: uppercase;
+}
+
+h2 {
+    font-family: 'bebasneue-bold';
+    font-size: 40px;
+    text-transform: uppercase;
+}
+
+h3 {
+    font-family: 'bebasneue-bold';
+    font-size: 22px;
+    text-transform: uppercase;
+}
+
+
+
 
 /*Buttons*/
 
@@ -125,6 +147,24 @@ body {
 }
 
 
+/*Request Meeting*/
+
+.RequestMeeting {
+    background: linear-gradient(335deg, #E85F2C 0%, #E88324 100%);
+    color: #fff;
+}
+
+.RequestMeetingText {
+    margin-left: 50px;
+}
+
+.RequestMeetingText p {
+    font-size: 18px;
+    line-height: 32px;
+    margin: 26px 0 30px 0;
+    width: 500px;
+}
+
 
 /*Header*/
 
@@ -148,8 +188,8 @@ header {
 }
 
 .MainNav ul {
-    display: flex;   
-    justify-content: flex-end; 
+    display: flex;
+    justify-content: flex-end;
 }
 
 .MainNav li {
@@ -161,12 +201,15 @@ header {
     text-transform: uppercase;
 }
 
+/*
 .CurrentPage, .MainNav li:hover {
     border-bottom: solid 1px #fff;
 }
+*/
 
+.CurrentPage,
 .MainNav li:hover {
-    opacity: 0.8;
+    opacity: 0.7;
 }
 
 .MainNav a {
@@ -195,20 +238,15 @@ header {
     width: 100%;
     position: fixed;
     top: 0;
+    left: 0;
     z-index: -1;
 }
 
 .IntroSectionText {
     padding: 34vh 50px;
-    width: 665px;
+    width: 700px;
     color: #fff;
     text-shadow: 0px 2px 6px rgba(0, 0, 0, 0.5);
-}
-
-.IntroSectionText h1 {
-    font-family: 'bebasneue-bold';
-    font-size: 60px;
-    text-transform: uppercase;
 }
 
 .IntroSectionText p {
@@ -224,17 +262,14 @@ header {
     background: #fff;
 }
 
-.OurExpertiseIntroText h1 {
+.OurExpertiseIntroText h3 {
     font-family: 'bebasneue-bold';
     font-size: 22px;
     text-transform: uppercase;
-    
+
 }
 
-.OurExpertiseIntroText h2 {
-    font-family: 'bebasneue-bold';
-    font-size: 60px;
-    text-transform: uppercase;
+.OurExpertiseIntroText h1 {
     margin: 20px 0;
 }
 
@@ -290,17 +325,14 @@ header {
     float: left;
 }
 
-.HomepageAbout h1 {
+.HomepageAbout h3 {
     font-family: 'bebasneue-bold';
     font-size: 22px;
     text-transform: uppercase;
 }
 
-.HomepageAbout h2 {
+.HomepageAbout h1 {
     color: #fff;
-    font-family: 'bebasneue-bold';
-    font-size: 60px;
-    text-transform: uppercase;
     margin-top: 50px;
 }
 
@@ -319,10 +351,7 @@ header {
     background: #EAEAEA;
 }
 
-.HomepageCaseStudies h1 {
-    font-family: 'bebasneue-bold';
-    font-size: 22px;
-    text-transform: uppercase;
+.HomepageCaseStudies h3 {
     margin-bottom: 50px;
 }
 
@@ -352,14 +381,11 @@ header {
 
 .HomepageCaseStudiesListItem h2 {
     font-family: 'objectsans-bold';
-    font-size: 12px;
+    font-size: 14px;
     text-transform: uppercase;
 }
 
-.HomepageCaseStudiesListItem h3 {
-    font-family: 'bebasneue-bold';
-    font-size: 60px;
-    text-transform: uppercase;
+.HomepageCaseStudiesListItem h1 {
     margin: 10px 0 100px 0;
 }
 
@@ -392,10 +418,7 @@ header {
     background: #fff;
 }
 
-.HomepageClientLogos h1 {
-    font-family: 'bebasneue-bold';
-    font-size: 40px;
-    text-transform: uppercase;
+.HomepageClientLogos h2 {
     margin-bottom: 50px;
 }
 
@@ -409,6 +432,7 @@ header {
 .owl-theme .owl-controls .owl-page {
     display: inline-block;
 }
+
 .owl-theme .owl-controls .owl-page span {
     background: none repeat scroll 0 0 #869791;
     border-radius: 20px;
@@ -420,7 +444,7 @@ header {
 }
 
 .owl-dot:focus {
-     outline: none;
+    outline: none;
 }
 
 
@@ -450,19 +474,16 @@ header {
     color: #fff;
 }
 
-.HomepageContact h1 {
-    font-family: 'bebasneue-bold';
-    font-size: 40px;
-    text-transform: uppercase;
-    
+.HomepageContact h2 {
+
     margin-bottom: 50px;
 }
 
-.HomepageContact .ConnectWithUs h2 {
+.HomepageContact .ConnectWithUs h3 {
     font-family: 'bebasneue-bold';
     font-size: 30px;
     text-transform: uppercase;
-    
+
     margin-top: 20px;
     margin-bottom: 10px;
 }
@@ -472,17 +493,18 @@ header {
     line-height: 20px;
 }
 
-.HomepageContact form .input, .HomepageContact form textarea {
+.HomepageContact form .input,
+.HomepageContact form textarea {
     width: 100%;
     background: none;
     padding-bottom: 40px;
     margin-bottom: 50px;
-    
+
     font-family: 'bebasneue-bold';
     font-size: 20px;
     text-transform: uppercase;
     color: #fff;
-    
+
     border: none;
     border-bottom: solid 1px #fff;
 }
@@ -491,11 +513,14 @@ header {
     padding-bottom: 60px;
 }
 
-.HomepageContact form .input::placeholder, .HomepageContact form textarea::placeholder {
+.HomepageContact form .input::placeholder,
+.HomepageContact form textarea::placeholder {
     color: #fff;
 }
 
-.HomepageContact form .input:focus, .HomepageContact form textarea:focus , .HomepageContact form #send:focus {
+.HomepageContact form .input:focus,
+.HomepageContact form textarea:focus,
+.HomepageContact form #send:focus {
     outline: none;
 }
 
@@ -507,7 +532,7 @@ header {
     width: 100%;
     color: #fff;
     padding: 15px;
-    
+
     font-family: 'bebasneue-bold';
     font-size: 16px;
     text-transform: uppercase;
@@ -520,6 +545,66 @@ header {
 }
 
 
+/*About Page*/
+
+
+
+.AboutInfo {
+    background: #fff;
+    padding-top: 100px;
+}
+
+.AboutInfo h2 {
+    margin: 50px 0 20px 0;
+}
+
+.AboutInfo p {
+    font-size: 16px;
+    line-height: 28px;
+
+    width: 800px;
+}
+
+
+
+
+/*Solutions Page*/
+
+.SolutionsContainer {
+    background: #EAEAEA;
+}
+
+.SolutionsList {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.SolutionsListItem {
+    background: #fff;
+    width: 30%;
+    margin-bottom: 50px;
+}
+
+.SolutionsListItem > img {
+    width: 100%;
+} 
+
+.SolutionsText {
+    padding: 30px;
+}
+
+.SolutionsText p {
+    font-size: 12px;
+    line-height: 22px;
+    
+    padding-top: 15px;
+    padding-bottom: 15px;
+    
+    min-height: 120px;
+}
+
+
 /*Footer*/
 
 footer {
@@ -528,13 +613,12 @@ footer {
 }
 
 footer .ControlledWidth {
-    display: flex;   
+    display: flex;
     justify-content: space-between;
 }
 
-
-
-footer h9, footer h10 {
+footer h9,
+footer h10 {
     color: #fff;
     font-size: 12px;
 }
@@ -548,6 +632,9 @@ footer h10 a {
 footer h10 a:hover {
     color: #FF7D00;
 }
+
+
+
 
 
 /*Responsiveness*/
