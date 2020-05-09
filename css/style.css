@@ -780,9 +780,16 @@ footer .InstagramFooterIcon {
 
 .about .text {
     width: 60%;
-    padding-right: 10%;
     float: left;
     text-align: left;
+}
+
+.about .text-left {
+    padding-right: 10%;
+}
+
+.about .text-right {
+    padding-left: 10%;
 }
 
 .about h2 {
