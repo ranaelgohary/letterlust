@@ -14,36 +14,25 @@
     <link rel="stylesheet" type="text/css" href="css/style.css">
 
     <!-- js -->
-    <script src="js/jquery-2.1.4.min.js"></script>
+    <script src="js/jquery-3.3.1.min.js"></script>
     <script src="js/script.js"></script>
-
-    <script src="js/classie.js"></script>
+    
     <script>
-        function init() {
-				window.addEventListener('scroll', function(e){
-					var distanceY = window.pageYOffset || document.documentElement.scrollTop,
-						shrinkOn = 0,
-						header = document.querySelector("header");
-					if (distanceY > shrinkOn) {
-						classie.add(header,"smaller");
-					} else {
-						if (classie.has(header,"smaller")) {
-							classie.remove(header,"smaller");
-						}
-					}
-				});
-			}
-			window.onload = init();
-		</script>
-    <script>
-        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-			  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-			  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-			  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+        (function(i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r;
+            i[r] = i[r] || function() {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date();
+            a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0];
+            a.async = 1;
+            a.src = g;
+            m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
 
-			  ga('create', 'UA-103569313-1', 'auto');
-			  ga('send', 'pageview');
-		</script>
+        ga('create', 'UA-103569313-1', 'auto');
+        ga('send', 'pageview');
+    </script>
 
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
     <script src="js/responsiveslides.min.js"></script>
@@ -59,12 +48,12 @@
 
     <div class="ColouredContainer">
 
-            <header>
+        <header>
+
+            <div class="ControlledWidth">
 
                 <a href="index.html"><img class="HeaderLogo" src="img/svg/letterlust_logo.svg" /></a>
-                
-                <div class="ControlledWidth">
-                
+
                 <nav id="mainNav">
                     <ul>
                         <a href="index.html">
@@ -84,35 +73,35 @@
                         </a>
                     </ul>
                 </nav>
-                    
-                </div>
-
-            </header>
-
-            <div id="openBurgerMenu" class="mobileMenuToggle">MENU</div>
-            <div id="closeBurgerMenu" class="mobileMenuToggle displayNone">CLOSE</div>
-
-            <div id="mobileMenu" class="displayNone">
-
-                <ul>
-                    <a href="index.html">
-                        <li>Home</li>
-                    </a>
-                    <a href="work.html">
-                        <li>Work</li>
-                    </a>
-                    <a href="clients.html" class="currentPage">
-                        <li>Clients</li>
-                    </a>
-                    <a href="about.html">
-                        <li>Story</li>
-                    </a>
-                    <a href="contact.html">
-                        <li>Contact</li>
-                    </a>
-                </ul>
-
+                
             </div>
+
+        </header>
+
+        <div id="openBurgerMenu" class="mobileMenuToggle">MENU</div>
+        <div id="closeBurgerMenu" class="mobileMenuToggle displayNone">CLOSE</div>
+
+        <div id="mobileMenu" class="displayNone">
+
+            <ul>
+                <a href="index.html">
+                    <li>Home</li>
+                </a>
+                <a href="work.html">
+                    <li>Work</li>
+                </a>
+                <a href="clients.html" class="currentPage">
+                    <li>Clients</li>
+                </a>
+                <a href="about.html">
+                    <li>Story</li>
+                </a>
+                <a href="contact.html">
+                    <li>Contact</li>
+                </a>
+            </ul>
+
+        </div>
 
         <div class="ControlledWidth">
 
@@ -199,31 +188,31 @@
                     <img src="img/Clients/16dash.png">
 
                     <a href="https://letterlust.studio/work/style&rhythm" target="_blank"><img src="img/Clients/style&rhythm.png"></a>
-                    
+
                     <img src="img/Clients/green.png">
-                    
+
                     <img src="img/Clients/archimid.png">
-                    
+
                     <img src="img/Clients/agora.png">
-                    
+
                     <img src="img/Clients/autoparts.png">
-                    
+
                     <img src="img/Clients/darjee.png">
-                    
+
                     <img src="img/Clients/ETD.png">
-                    
+
                     <img src="img/Clients/ETL.png">
-                    
+
                     <img src="img/Clients/engaz.png">
-                    
+
                     <img src="img/Clients/findmefootball.png">
-                    
+
                     <img src="img/Clients/giz.png">
-                    
+
                     <img src="img/Clients/joudran.png">
-                    
+
                     <img src="img/Clients/merakido.png">
-                    
+
                     <img src="img/Clients/passport.png">
 
                 </div>

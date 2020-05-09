@@ -73,7 +73,7 @@ $(document).ready(function () {
             $(".brand-identity").show(400);
             $(".sales-decks").show(400);
             $(".web-design").show(400);
-            $(".print-design").hide(400);
+            $(".print-design").show(400);
             
             $("#all-projects").addClass( "selected" );
             $("#brand-identity").removeClass( "selected" );
