@@ -21,7 +21,8 @@
 /*Generic Styles*/
 
 body {
-    font-family: 'objectsans-regular';
+    font-family: 'objectsans-regular', sans-serif;
+    color: #3C3C3C;
 }
 
 .ControlledWidth {
@@ -34,24 +35,28 @@ body {
     padding: 100px 0;
 }
 
+.separator_100px {
+    height: 100px;
+}
+
 
 
 /*Text Hierarchy */
 
 h1 {
-    font-family: 'bebasneue-bold';
+    font-family: 'bebasneue-bold', sans-serif;
     font-size: 60px;
     text-transform: uppercase;
 }
 
 h2 {
-    font-family: 'bebasneue-bold';
+    font-family: 'bebasneue-bold', sans-serif;
     font-size: 40px;
     text-transform: uppercase;
 }
 
 h3 {
-    font-family: 'bebasneue-bold';
+    font-family: 'bebasneue-bold', sans-serif;
     font-size: 22px;
     text-transform: uppercase;
 }
@@ -74,7 +79,7 @@ h3 {
 }
 
 .Button h10 {
-    font-family: 'bebasneue-bold';
+    font-family: 'bebasneue-bold', sans-serif;
     font-size: 18px;
     text-transform: uppercase;
 }
@@ -154,9 +159,11 @@ h3 {
     color: #fff;
 }
 
+/*
 .RequestMeetingText {
     margin-left: 50px;
 }
+*/
 
 .RequestMeetingText p {
     font-size: 18px;
@@ -217,6 +224,13 @@ header {
     text-decoration: none;
 }
 
+.DarkNav a {
+    color: #3C3C3C;
+}
+
+
+
+
 
 /*Burger Menu*/
 
@@ -262,13 +276,6 @@ header {
     background: #fff;
 }
 
-.OurExpertiseIntroText h3 {
-    font-family: 'bebasneue-bold';
-    font-size: 22px;
-    text-transform: uppercase;
-
-}
-
 .OurExpertiseIntroText h1 {
     margin: 20px 0;
 }
@@ -285,23 +292,20 @@ header {
     margin-top: 100px;
 }
 
-.ListItem {
+.ExpertiseListItem {
     width: 33.3%;
     margin-bottom: 100px;
 }
 
-.ListItem img {
+.ExpertiseListItem img {
     width: 50px;
 }
 
-.ListItem h3 {
-    font-family: 'bebasneue-bold';
-    font-size: 22px;
-    text-transform: uppercase;
+.ExpertiseListItem h3 {
     padding: 24px 0 16px 0;
 }
 
-.ListItem p {
+.ExpertiseListItem p {
     font-size: 12px;
     line-height: 22px;
     width: 80%;
@@ -326,7 +330,7 @@ header {
 }
 
 .HomepageAbout h3 {
-    font-family: 'bebasneue-bold';
+    font-family: 'bebasneue-bold', sans-serif;
     font-size: 22px;
     text-transform: uppercase;
 }
@@ -414,15 +418,15 @@ header {
 
 /*Homepage Client Logos*/
 
-.HomepageClientLogos {
+.ClientLogos {
     background: #fff;
 }
 
-.HomepageClientLogos h2 {
+.ClientLogos h2 {
     margin-bottom: 50px;
 }
 
-.HomepageClientLogos .single-logo img {
+.ClientLogos .single-logo img {
     width: 70%;
     margin: 0 auto;
 }
@@ -452,20 +456,20 @@ header {
 /*Homepage Contact*/
 
 
-.HomepageContact {
+#HomepageContact {
     background: #EAEAEA;
 }
 
-.HomepageContact .ControlledWidth {
+.ContactSection .ControlledWidth {
     overflow: hidden;
 }
 
-.HomepageContact .ConnectWithUs {
+.ContactSection .ConnectWithUs {
     width: 50%;
     float: left;
 }
 
-.HomepageContact .GetInTouch {
+.ContactSection .GetInTouch {
     background: linear-gradient(335deg, #E85F2C 0%, #E88324 100%);
     width: 35%;
     float: right;
@@ -474,13 +478,13 @@ header {
     color: #fff;
 }
 
-.HomepageContact h2 {
+.ContactSection h2 {
 
     margin-bottom: 50px;
 }
 
-.HomepageContact .ConnectWithUs h3 {
-    font-family: 'bebasneue-bold';
+.ContactSection .ConnectWithUs h3 {
+    font-family: 'bebasneue-bold', sans-serif;
     font-size: 30px;
     text-transform: uppercase;
 
@@ -488,19 +492,19 @@ header {
     margin-bottom: 10px;
 }
 
-.HomepageContact .ConnectWithUs p {
+.ContactSection .ConnectWithUs p {
     font-size: 12px;
     line-height: 20px;
 }
 
-.HomepageContact form .input,
-.HomepageContact form textarea {
+.ContactSection form .input,
+.ContactSection form textarea {
     width: 100%;
     background: none;
     padding-bottom: 40px;
     margin-bottom: 50px;
 
-    font-family: 'bebasneue-bold';
+    font-family: 'bebasneue-bold', sans-serif;
     font-size: 20px;
     text-transform: uppercase;
     color: #fff;
@@ -509,23 +513,23 @@ header {
     border-bottom: solid 1px #fff;
 }
 
-.HomepageContact form textarea {
+.ContactSection form textarea {
     padding-bottom: 60px;
 }
 
-.HomepageContact form .input::placeholder,
-.HomepageContact form textarea::placeholder {
+.ContactSection form .input::placeholder,
+.ContactSection form textarea::placeholder {
     color: #fff;
 }
 
-.HomepageContact form .input:focus,
-.HomepageContact form textarea:focus,
-.HomepageContact form #send:focus {
+.ContactSection form .input:focus,
+.ContactSection form textarea:focus,
+.ContactSection form #send:focus {
     outline: none;
 }
 
 
-.HomepageContact form #send {
+.ContactSection form #send {
     background: none;
     border: solid 1px #fff;
     border-radius: 5px;
@@ -533,12 +537,12 @@ header {
     color: #fff;
     padding: 15px;
 
-    font-family: 'bebasneue-bold';
+    font-family: 'bebasneue-bold', sans-serif;
     font-size: 16px;
     text-transform: uppercase;
 }
 
-.HomepageContact form #send:hover {
+.ContactSection form #send:hover {
     background: #fff;
     color: #FF7D00;
     cursor: pointer;
@@ -603,6 +607,115 @@ header {
     
     min-height: 120px;
 }
+
+.solutionsDetailedPageSuccessStory {
+    background: #EAEAEA;
+}
+
+.solutionsDetailedPageSuccessStory h2 {
+    margin: 24px 0;
+}
+
+.solutionsDetailedPageSuccessStory p {
+    font-size: 16px;
+    line-height: 28px;
+    width: 700px;
+    margin-bottom: 40px;
+}
+
+
+/*Detailed Solutions Page*/
+
+.SolutionInfo {
+    background: #fff;
+    padding-top: 100px;
+}
+
+.solutionDescription {
+    display: flex;
+    justify-content: space-between;
+    margin: 50px 0;
+}
+
+.solutionDescription > div {
+    width: 30%;
+    
+    padding: 25px 0;
+    
+    text-align: center;
+    color: #FF7D00;
+    border: solid 2px #FF7D00;
+    border-radius: 7px;
+    
+    font-family: 'bebasneue-bold', sans-serif;
+    text-transform: uppercase;
+    font-size: 26px;
+}
+
+.SolutionInfo h2 {
+    
+}
+
+.SolutionInfo .ControlledWidth > p {
+    font-size: 16px;
+    line-height: 28px;
+
+    width: 800px;
+}
+
+
+/*Contact*/
+
+#ContactMap {
+    position: absolute;
+    right: 0;
+    width: 70%;
+    z-index: -10;
+}
+
+#contactIntroSection {
+    padding-top: 200px;
+}
+
+#contactIntroSection h2, #contactIntroSection h3 {
+    margin-bottom: 20px;
+}
+
+
+
+#contactIntroSection p {
+    font-size: 18px;
+    line-height: 32px;
+}
+
+#ContactSectionContactPage {
+    margin-top: 200px;
+}
+
+#ContactSectionContactPage .ConnectWithUs h3 {
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+#ContactSectionContactPage .ConnectWithUs p {
+    line-height: 22px;
+    margin-bottom: 10px;
+}
+
+#ContactSectionContactPage .ConnectWithUs a {
+    color: #3C3C3C;
+    text-decoration: none;
+    font-size: 12px;
+    font-family: 'objectsans-bold';
+}
+
+#ContactSectionContactPage .ConnectWithUs a:hover {
+    color: #FF7D00;
+}
+
+
+
+
 
 
 /*Footer*/
