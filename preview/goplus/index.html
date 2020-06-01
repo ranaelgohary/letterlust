@@ -14,14 +14,15 @@
     <link rel="stylesheet" type="text/css" href="css/owl.carousel.css">
     <link rel="stylesheet" type="text/css" href="css/owl.theme.default.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/hamburgers.css">
 
     <!-- js -->
     <script src="js/jquery-3.3.1.min.js"></script>
-        <!-- Client Logo Slider-->
-    <script src="js/owl.carousel.min.js"></script> 
+    <!-- Client Logo Slider-->
+    <script src="js/owl.carousel.min.js"></script>
 
-    
-    
+
+
 </head>
 
 <body>
@@ -51,6 +52,36 @@
                     </a>
                 </ul>
             </nav>
+
+        </div>
+
+        <div class="hamburger hamburger--3dy" type="button" id="burger-button">
+            <span class="hamburger-box">
+                <span class="hamburger-inner"></span>
+            </span>
+        </div>
+
+        <div id="mobileMenu" class="mobileMenuInactive">
+
+            <ul id="mobileMenuUl" class="UlTransparent">
+
+                <a href="index.html">
+                    <li class="CurrentPage">Home</li>
+                </a>
+                <a href="about.html">
+                    <li>About</li>
+                </a>
+                <a href="solutions.html">
+                    <li>Solutions</li>
+                </a>
+                <a href="successstories.html">
+                    <li>Success Stories</li>
+                </a>
+                <a href="contact.html">
+                    <li>Contact</li>
+                </a>
+
+            </ul>
 
         </div>
 
@@ -192,7 +223,7 @@
                         <h2>VEHICLE INSPECTION CENTERS AND DRIVING SCHOOLS</h2>
                         <h1>Changing Culture</h1>
 
-                        <h4>Aligning Egypt’s Digital Developments and Infrastructure<br>for Better Road Transport</h4>
+                        <h4>Aligning Egypt’s Digital Developments and Infrastructure for Better Road Transport</h4>
                         <p>The development of digital infrastructure needed to be complimented with the necessary tools, spaces and trained individuals, to align all aspects of traffic.</p>
 
                         <a href="solutions.html" class="Button OrangeButton">
@@ -218,7 +249,7 @@
     <div class="ClientLogos SectionPadding">
 
         <div class="ControlledWidth">
-            
+
             <h2>Successful Partnerships</h2>
 
             <div class="brand-carousel owl-carousel owl-theme">
@@ -242,19 +273,19 @@
                 <div class="single-logo">
                     <img src="img/Homepage/ClientLogos/SGS.png">
                 </div>
-                
+
                 <div class="single-logo">
                     <img src="img/Homepage/ClientLogos/e-finance.png">
                 </div>
-                
+
                 <div class="single-logo">
                     <img src="img/Homepage/ClientLogos/Moi.png">
                 </div>
-                
+
                 <div class="single-logo">
                     <img src="img/Homepage/ClientLogos/Ppo.png">
                 </div>
-                
+
                 <div class="single-logo">
                     <img src="img/Homepage/ClientLogos/Belhasa.png">
                 </div>
@@ -264,68 +295,84 @@
         </div>
 
     </div>
-    
+
     <div class="ContactSection" id="HomepageContact">
-        
+
         <div class="ControlledWidth">
-            
+
             <div class="ConnectWithUs SectionPadding">
-                
+
                 <h2>Connect With Us</h2>
-                
+
                 <h3>EGYPT</h3>
                 <p>HQ Address: 5 Mostafa Refaat, Sheraton, Heliopolis, Cairo, Egypt<br>
                     Operations : 16 z Ahmed Abd El Aziz St, Taqssem El Lasilky, New Maadi, Cairo, Egypt<br>
                     Telephone: 19147<br>
                     Email: info@goplus-eg.com</p>
-                
+
                 <h3>UAE</h3>
-                <p>HQ Address:  504, Maze Tower Dubai United Arab Emirates<br>
+                <p>HQ Address: 504, Maze Tower Dubai United Arab Emirates<br>
                     P.O. Box: 413530<br>
                     Telephone: +971 (0)4 344 3603<br>
                     Fax: +971 (0)4 271 5444<br>
                     Email: info@goplus-eg.com </p>
-                
+
                 <h3>Georgia</h3>
-                <p>Address:  Georgia, City Tbilisi, Saburtalo District, <br>
+                <p>Address: Georgia, City Tbilisi, Saburtalo District, <br>
                     S. Arshba Street, 4, App.23<br>
                     Email: info@goplus-eg.com </p>
-                
+
             </div>
-            
+
             <div class="GetInTouch SectionPadding">
-                
+
                 <h2>Get in Touch</h2>
-                
+
                 <form method="POST" form="" action="">
                     <input class="input" type="text" name="name" placeholder="Your Name">
                     <input class="input" type="email" name="email" placeholder="Your E-mail">
                     <textarea name="message" placeholder="Message"></textarea>
                     <input id="send" type="submit" value="Send">
                 </form>
-                
+
             </div>
-            
+
         </div>
-        
+
     </div>
 
     <footer>
-        
+
         <div class="ControlledWidth">
-    
+
             <h9>Copyright © Go Plus Egypt. All rights reserved.</h9>
 
             <h10>Designed by <a href="www.letterlust.studio" target="_blank">Letterlust Studio</a></h10>
-            
+
         </div>
-    
+
     </footer>
 
 
 
 
+    <!--Hamburger Button Animation-->
 
+    <script>
+        // Look for .hamburger
+        var hamburger = document.querySelector(".hamburger");
+        var mobileMenu = document.querySelector("#mobileMenu");
+        var mobileMenuUl = document.querySelector("#mobileMenuUl");
+        // On click
+        hamburger.addEventListener("click", function() {
+            // Toggle class "is-active"
+            hamburger.classList.toggle("is-active");
+            // Open Menu
+            mobileMenu.classList.toggle("mobileMenuActive");
+            // Show Links
+            mobileMenuUl.classList.toggle("UlOpaque");
+        });
+    </script>
 
 
     <!-- Client Logo Slider-->

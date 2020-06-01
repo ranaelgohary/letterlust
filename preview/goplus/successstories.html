@@ -14,6 +14,7 @@
     <link rel="stylesheet" type="text/css" href="css/owl.carousel.css">
     <link rel="stylesheet" type="text/css" href="css/owl.theme.default.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/hamburgers.css">
 
     <!-- js -->
     <script src="js/jquery-3.3.1.min.js"></script>
@@ -54,6 +55,36 @@
 
         </div>
 
+        <div class="hamburger hamburger--3dy" type="button" id="burger-button">
+            <span class="hamburger-box">
+                <span class="hamburger-inner"></span>
+            </span>
+        </div>
+
+        <div id="mobileMenu" class="mobileMenuInactive">
+
+            <ul id="mobileMenuUl" class="UlTransparent">
+
+                <a href="index.html">
+                    <li>Home</li>
+                </a>
+                <a href="about.html">
+                    <li>About</li>
+                </a>
+                <a href="solutions.html">
+                    <li>Solutions</li>
+                </a>
+                <a href="successstories.html">
+                    <li class="CurrentPage">Success Stories</li>
+                </a>
+                <a href="contact.html">
+                    <li>Contact</li>
+                </a>
+
+            </ul>
+
+        </div>
+
     </header>
 
     <div class="IntroSection">
@@ -88,7 +119,7 @@
                         <h4>Case Study of Egypt’s Ministry of Interior Road Transport RFID Tag</h4>
                         <p>Egypt has progressed in the future with its recent developments and GO+ has participated in this growth by currently providing a structured system for the 10 million motor vehicles in Egypt as a part of the Ministry of Interior.</p>
 
-                        <a href="solutions.html" class="Button OrangeButton">
+                        <a href="successStories/calmingTheChaos.html" class="Button OrangeButton">
                             <div>
                                 <h10>View Project</h10>
                                 <div class="ButtonArrow"></div>
@@ -106,7 +137,7 @@
                         <h2>VEHICLE INSPECTION CENTERS AND DRIVING SCHOOLS</h2>
                         <h1>Changing Culture</h1>
 
-                        <h4>Aligning Egypt’s Digital Developments and Infrastructure<br>for Better Road Transport</h4>
+                        <h4>Aligning Egypt’s Digital Developments and Infrastructure for Better Road Transport</h4>
                         <p>The development of digital infrastructure needed to be complimented with the necessary tools, spaces and trained individuals, to align all aspects of traffic.</p>
 
                         <a href="solutions.html" class="Button OrangeButton">
@@ -165,7 +196,23 @@
 
 
 
+    <!--Hamburger Button Animation-->
 
+    <script>
+        // Look for .hamburger
+        var hamburger = document.querySelector(".hamburger");
+        var mobileMenu = document.querySelector("#mobileMenu");
+        var mobileMenuUl = document.querySelector("#mobileMenuUl");
+        // On click
+        hamburger.addEventListener("click", function() {
+            // Toggle class "is-active"
+            hamburger.classList.toggle("is-active");
+            // Open Menu
+            mobileMenu.classList.toggle("mobileMenuActive");
+            // Show Links
+            mobileMenuUl.classList.toggle("UlOpaque");
+        });
+    </script>
 
 
     <!-- Client Logo Slider-->
