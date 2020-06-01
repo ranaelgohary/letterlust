@@ -975,7 +975,8 @@ footer h10 a:hover {
     .SolutionInfo ul,
     .SuccessStoryInfo .ControlledWidth > p,
     .SuccessStoryInfo h2,
-    .solutionsDetailedPageSuccessStory p {
+    .solutionsDetailedPageSuccessStory p,
+    .RequestMeetingText p {
         width: 100%;
         max-width: 450px;
     }
@@ -999,8 +1000,8 @@ footer h10 a:hover {
     }
 
     .HomepageAbout p {
-        font-size: 26px;
-        line-height: 40px;
+        font-size: 24px;
+        line-height: 36px;
     }
 
     .ContactSection .GetInTouch SectionPadding {
@@ -1008,7 +1009,7 @@ footer h10 a:hover {
     }
 
     .ContactSection .ConnectWithUs {
-        width: 100%;
+        width: 90%;
         padding: 100px 5%;
     }
 
@@ -1023,7 +1024,23 @@ footer h10 a:hover {
     .SolutionsListItem {
         width: 100%;
     }
-
+    
+    h3 {
+        font-size: 26px;
+    }
+    
+    .ExpertiseListItem p {
+        font-size: 16px;
+    line-height: 28px;
+    }
+    
+    footer h9 {
+        width: 160px;
+    }
+    
+    footer h10 {
+        width: 101px;
+    }
 
 
 }
