@@ -69,6 +69,8 @@ h3 {
 
 .Button {
     text-decoration: none;
+    display: block;
+    width: 220px;
 }
 
 .Button > div {
@@ -881,7 +883,7 @@ footer h10 a:hover {
 
 @media (max-width: 1200px) {
 
-    .Button > div {
+    .Button, .Button > div {
         width: 160px;
     }
 
