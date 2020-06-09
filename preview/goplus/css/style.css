@@ -450,6 +450,7 @@ header {
     background: rgba(0, 0, 0, 0.5);
     padding: 10% 5%;
     transition: background 0.5s ease;
+    height: 110%;
 }
 
 .HomepageCaseStudiesListItem .DarkLayer:hover {
@@ -486,11 +487,13 @@ header {
 .HomepageCaseStudies .CalmingTheChaos {
     background-image: url("../img/Homepage/CaseStudies/CaseStudy_CalmingTheChaos.jpg");
     background-size: cover;
+    overflow: hidden;
 }
 
 .HomepageCaseStudies .ChangingCulture {
     background-image: url("../img/Homepage/CaseStudies/CaseStudy_ChangingCulture.jpg");
     background-size: cover;
+    overflow: hidden;
 }
 
 
