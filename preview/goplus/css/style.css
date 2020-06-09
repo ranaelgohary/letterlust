@@ -886,7 +886,8 @@ footer h10 a:hover {
 
 @media (max-width: 1200px) {
 
-    .Button, .Button > div {
+    .Button,
+    .Button > div {
         width: 160px;
     }
 
@@ -1025,24 +1026,24 @@ footer h10 a:hover {
     .ContactSection .ControlledWidth {
         width: auto;
     }
-    
+
     .SolutionsListItem {
         width: 100%;
     }
-    
+
     h3 {
         font-size: 26px;
     }
-    
+
     .ExpertiseListItem p {
         font-size: 16px;
-    line-height: 28px;
+        line-height: 28px;
     }
-    
+
     footer h9 {
         width: 160px;
     }
-    
+
     footer h10 {
         width: 101px;
     }
@@ -1054,7 +1055,7 @@ footer h10 a:hover {
 /*	Less than 500 Mobile */
 
 @media (max-width: 570px) {
-    
+
     .IntroSection {
         height: auto;
     }
@@ -1062,5 +1063,9 @@ footer h10 a:hover {
     .IntroSectionImg {
         width: 300%;
     }
-    
+
+    #ContactMap {
+        width: 100%;
+    }
+
 }

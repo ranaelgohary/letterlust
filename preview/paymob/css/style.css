@@ -764,7 +764,8 @@ nav li:hover {
     margin-left: 25%;
 }
 
-.about p span, .careers span {
+.about p span,
+.careers span {
     font-family: 'archiasemibold';
 }
 
@@ -1658,7 +1659,7 @@ footer .flex3 {
         padding-top: 160px;
         padding-bottom: 170px;
     }
-    
+
     .homepage-network {
         opacity: 0.05;
     }
@@ -1855,12 +1856,13 @@ footer .flex3 {
         width: 100%;
         margin-left: 0;
     }
-    
+
     .careers .job h1 {
         font-size: 24px;
     }
 
-    .careers .career-intro p, .careers .job p {
+    .careers .career-intro p,
+    .careers .job p {
         font-size: 14px;
         line-height: 1.9em;
     }
