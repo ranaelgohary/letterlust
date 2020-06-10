@@ -39,6 +39,20 @@ body {
     height: 100px;
 }
 
+.iframe-container{
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%; 
+  height: 0;
+}
+.iframe-container iframe{
+  position: absolute;
+  top:0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
 
 
 /*Text Hierarchy */
@@ -1047,6 +1061,10 @@ footer h10 a:hover {
     footer h10 {
         width: 101px;
     }
+    
+    .imageGallery a {
+        width: 50%;
+    }
 
 
 }
@@ -1065,6 +1083,10 @@ footer h10 a:hover {
     }
 
     #ContactMap {
+        width: 100%;
+    }
+    
+    .imageGallery a {
         width: 100%;
     }
 
