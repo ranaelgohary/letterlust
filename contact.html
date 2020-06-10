@@ -2,214 +2,183 @@
 <html lang="en-gb">
 
 <head>
-    <title>GoPlus Egypt</title>
+    <title>Letterlust Studio</title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no" />
 
-    <!-- favicon -->
-    <link rel="icon" type="image/png" href="img/GenericElements/favicon.png">
+    <!-- fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400&display=swap" rel="stylesheet">
 
     <!-- css -->
     <link rel="stylesheet" type="text/css" href="css/reset.css">
-    <link rel="stylesheet" type="text/css" href="css/owl.carousel.css">
-    <link rel="stylesheet" type="text/css" href="css/owl.theme.default.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
-    <link rel="stylesheet" type="text/css" href="css/hamburgers.css">
 
     <!-- js -->
     <script src="js/jquery-3.3.1.min.js"></script>
-    <!-- Client Logo Slider-->
-    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/script.js"></script>
+    
+    <script>
+        (function(i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r;
+            i[r] = i[r] || function() {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date();
+            a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0];
+            a.async = 1;
+            a.src = g;
+            m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+        ga('create', 'UA-103569313-1', 'auto');
+        ga('send', 'pageview');
+    </script>
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script src="js/responsiveslides.min.js"></script>
+
+    <link rel="icon" type="image/png" href="img/MainElements/favicon.png">
 
 
 
 </head>
 
+
 <body>
 
-    <header>
+    <div class="ColouredContainer">
 
-        <div class="ControlledWidth">
+        <header>
 
-            <a href="index.html"><img class="HeaderLogo" src="img/GenericElements/GoPlus_Logo_Grey.png"></a>
+            <div class="ControlledWidth">
 
-            <nav class="MainNav DarkNav">
-                <ul>
-                    <a href="index.html">
-                        <li>Home</li>
-                    </a>
-                    <a href="about.html">
-                        <li>About</li>
-                    </a>
-                    <a href="solutions.html">
-                        <li>Solutions</li>
-                    </a>
-                    <a href="successstories.html">
-                        <li>Success Stories</li>
-                    </a>
-                    <a href="contact.html">
-                        <li class="CurrentPage">Contact</li>
-                    </a>
-                </ul>
-            </nav>
+                <a href="index.html"><img class="HeaderLogo" src="img/svg/letterlust_logo.svg" /></a>
 
-        </div>
-        
-        <div class="hamburger hamburger--3dy" type="button" id="burger-button">
-            <span class="hamburger-box">
-                <span class="hamburger-inner"></span>
-            </span>
-        </div>
+                <nav id="mainNav">
+                    <ul>
+                        <a href="index.html">
+                            <li>Home</li>
+                        </a>
+                        <a href="work.html">
+                            <li>Work</li>
+                        </a>
+                        <a href="clients.html">
+                            <li>Clients</li>
+                        </a>
+                        <a href="about.html">
+                            <li>Story</li>
+                        </a>
+                        <a href="contact.html" class="currentPage">
+                            <li>Contact</li>
+                        </a>
+                    </ul>
+                </nav>
+                
+            </div>
 
-        <div id="mobileMenu" class="mobileMenuInactive">
+        </header>
 
-            <ul id="mobileMenuUl" class="UlTransparent">
 
+
+        <div id="openBurgerMenu" class="mobileMenuToggle">MENU</div>
+        <div id="closeBurgerMenu" class="mobileMenuToggle displayNone">CLOSE</div>
+
+        <div id="mobileMenu" class="displayNone">
+
+            <ul>
                 <a href="index.html">
                     <li>Home</li>
                 </a>
+                <a href="work.html">
+                    <li>Work</li>
+                </a>
+                <a href="clients.html">
+                    <li>Clients</li>
+                </a>
                 <a href="about.html">
-                    <li>About</li>
+                    <li>Story</li>
                 </a>
-                <a href="solutions.html">
-                    <li>Solutions</li>
+                <a href="#footer" class="currentPage">
+                    <li>Contact</li>
                 </a>
-                <a href="successstories.html">
-                    <li>Success Stories</li>
-                </a>
-                <a href="contact.html">
-                    <li class="CurrentPage">Contact</li>
-                </a>
-
             </ul>
 
         </div>
 
-    </header>
-    
-    <img id="ContactMap" src="img/Contact/ContactMap_2.png" alt="Map showing GoPlus office locations">
-    
-    <div id="contactIntroSection">
-        
         <div class="ControlledWidth">
-    
-            <h3>Contact</h3>
-            
-            <h2>Get in Touch</h2>
-            
-            <p>For customer support, requesting a meeting,<br>
-or sales inquiries, please get in touch.</p>
-            
-        </div>
-        
-    </div>
-    
-    <div class="ContactSection" id="ContactSectionContactPage">
-        
-        <div class="ControlledWidth">
-            
-            <div class="ConnectWithUs">
-                
-                <h2>Connect With Us</h2>
-                
-                <h3>EGYPT</h3>
-                <p>HQ Address: 5 Mostafa Refaat, Sheraton, Heliopolis, Cairo, Egypt<br>
-                    Operations : 16 z Ahmed Abd El Aziz St, Taqssem El Lasilky, New Maadi, Cairo, Egypt<br>
-                    Telephone: 19147<br>
-                    Email: info@goplus-eg.com</p>
-                
-                <a href="https://goo.gl/maps/v4i9KMCdAgoYhuwg8">VIEW MAP &#8594;</a>
-                
-                <h3>UAE</h3>
-                <p>HQ Address:  504, Maze Tower Dubai United Arab Emirates<br>
-                    P.O. Box: 413530<br>
-                    Telephone: +971 (0)4 344 3603<br>
-                    Fax: +971 (0)4 271 5444<br>
-                    Email: info@goplus-eg.com </p>
-                
-                <a href="https://goo.gl/maps/byEjCZaWk8tyCAk68">VIEW MAP &#8594;</a>
-                
-                <h3>Georgia</h3>
-                <p>Address:  Georgia, City Tbilisi, Saburtalo District, <br>
-                    S. Arshba Street, 4, App.23<br>
-                    Email: info@goplus-eg.com </p>
-                
-                <a href="https://goo.gl/maps/7CEP6nQ1RYuFDkMP8">VIEW MAP &#8594;</a>
-                
-            </div>
-            
-            <div class="GetInTouch SectionPadding">
-                
-                <h2>Get in Touch</h2>
-                
-                <form method="POST" form="" action="contact.php">
-                    <input class="input" type="text" name="name" placeholder="Your Name">
-                    <input class="input" type="email" name="email" placeholder="Your E-mail">
-                    <textarea name="message" placeholder="Message"></textarea>
-                    <input id="send" type="submit" value="Send">
+
+            <div class="contact">
+
+                <div class="text">
+                    <h1>Design is more of<br>a conversation<br>than a monologue.</h1>
+                    <p>The studio’s philosophy is to value communication above design, within projects as well as customer relationships. Creating a functional, beautiful logo is equally important as a happy client whose voice was heard and well-represented in the design.</p>
+                </div>
+
+                <form method="POST" action="http://formspree.io/rana@letterlust.studio">
+                    <input class="input" type="text" name="name" placeholder="Your Name + Business’ Name">
+                    <input class="input" type="email" name="email" placeholder="Your Email">
+                    <textarea name="message" placeholder="Your Message"></textarea>
+                    <button type="submit" class="CTA">SUBMIT</button>
                 </form>
-                
+
             </div>
-            
+
         </div>
-        
+
     </div>
 
-    
-    <footer>
+    <footer id="footer">
 
         <div class="ControlledWidth">
 
-            <h9>Copyright © Go Plus Egypt. All rights reserved.</h9>
+            <h2>Letterlust on Instagram</h2>
 
-            <h10>Designed by <a href="www.letterlust.studio" target="_blank">Letterlust Studio</a></h10>
+            <div class="instagram-feed">
+                <a href="http://instagram.com/letter.lust" target="_blank"><img src="img/instagramfeed/26daysofletters.jpg"></a>
+                <a href="http://instagram.com/letter.lust" target="_blank"><img src="img/instagramfeed/C.jpg"></a>
+                <a href="http://instagram.com/letter.lust" target="_blank"><img src="img/instagramfeed/DOTS.jpg"></a>
+                <a href="http://instagram.com/letter.lust" target="_blank"><img src="img/instagramfeed/ExcelsiorPlate.jpg"></a>
+                <a href="http://instagram.com/letter.lust" target="_blank"><img src="img/instagramfeed/Hockzeitkamera.jpg"></a>
+
+                <a href="http://instagram.com/letter.lust" target="_blank"><img src="img/instagramfeed/Quote1.jpg"></a>
+                <a href="http://instagram.com/letter.lust" target="_blank"><img src="img/instagramfeed/W.jpg"></a>
+                <a href="http://instagram.com/letter.lust" target="_blank"><img src="img/instagramfeed/Quote2.jpg"></a>
+                <a href="http://instagram.com/letter.lust" target="_blank"><img src="img/instagramfeed/Z.jpg"></a>
+                <a href="http://instagram.com/letter.lust" target="_blank"><img src="img/instagramfeed/Quote3.jpg"></a>
+            </div>
+
+            <a href="mailto:ranahello@letterlust.studio">rana@letterlust.studio</a>
+
+            <div class="SocialMedia">
+
+                <a href="https://www.facebook.com/letter.lust" target="_blank">
+                    <div class="SocialMediaCircle">
+
+                        <img class="FacebookFooterIcon" src="img/svg/facebook-logo.svg">
+
+                    </div>
+                </a>
+
+                <a href="https://www.instagram.com/letter.lust/" target="_blank">
+                    <div class="SocialMediaCircle">
+
+                        <img class="InstagramFooterIcon" src="img/svg/instagram-logo.svg">
+
+                    </div>
+                </a>
+
+            </div>
 
         </div>
 
     </footer>
 
-
-
-
-    <!--Hamburger Button Animation-->
-
     <script>
-        // Look for .hamburger
-        var hamburger = document.querySelector(".hamburger");
-        var mobileMenu = document.querySelector("#mobileMenu");
-        var mobileMenuUl = document.querySelector("#mobileMenuUl");
-        // On click
-        hamburger.addEventListener("click", function() {
-            // Toggle class "is-active"
-            hamburger.classList.toggle("is-active");
-            // Open Menu
-            mobileMenu.classList.toggle("mobileMenuActive");
-            // Show Links
-            mobileMenuUl.classList.toggle("UlOpaque");
+        $(function() {
+            $(".rslides").responsiveSlides();
         });
     </script>
 
-
-    <!-- Client Logo Slider-->
-
-    <script>
-        $('.owl-carousel').owlCarousel({
-            loop: false,
-            nav: false,
-            dots: true,
-            autoplay: true,
-            responsive: {
-                0: {
-                    items: 1
-                },
-                600: {
-                    items: 3
-                },
-                1000: {
-                    items: 5
-                }
-            }
-        })
-    </script>
-
 </body>
+
+</html>

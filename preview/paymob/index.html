@@ -1,0 +1,413 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+
+    <title>Paymob</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no" />
+    <link rel="shortcut icon" type="image/png" href="img/generic/favicon.png" />
+
+    <!-- css -->
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/hamburgers.css" rel="stylesheet">
+
+    <!-- js -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script type="text/javascript" src="js/homepage_script.js"></script>
+    <script type="text/javascript" src="js/products_page_script.js"></script>
+
+</head>
+
+
+<body>
+
+    <nav class="nav-homepage">
+
+        <div class="flex-1">
+            <a href="index.html"><img src="img/generic/paymob-logo-white.svg"></a>
+        </div>
+
+        <ul class="flex-2 desktop-nav">
+            <a href="index.html">
+                <li class="current-page">Home</li>
+            </a>
+
+            <a href="products.html">
+                <li>Products</li>
+            </a>
+
+            <a href="casestudies_main.html">
+                <li>Case Studies</li>
+            </a>
+
+            <a href="about.html">
+                <li>About</li>
+            </a>
+        </ul>
+
+        <div class="flex-3 desktop-nav" id="get-in-touch-cta">
+            <a href="contact.html">
+                <li>Get in Touch</li>
+            </a>
+        </div>
+
+        <div class="hamburger hamburger--3dy" type="button" id="burger-button">
+            <span class="hamburger-box">
+                <span class="hamburger-inner"></span>
+            </span>
+        </div>
+
+        <div id="mobileMenu" class="mobileMenuInactive">
+
+            <ul id="mobileMenuUl" class="UlTransparent">
+
+                <a href="index.html">
+                    <li class="current-page">Home</li>
+                </a>
+
+                <a href="products.html">
+                    <li>Products</li>
+                </a>
+
+                <a href="casestudies_main.html">
+                    <li>Case Studies</li>
+                </a>
+
+                <a href="about.html">
+                    <li>About</li>
+                </a>
+
+                <a href="contact.html">
+                    <li>Get in Touch</li>
+                </a>
+
+            </ul>
+
+        </div>
+
+    </nav>
+
+    <section class="homepage-intro">
+        <div class="content page-padding">
+
+            <h1 class="heading white">Mobile Wallet Solutions</h1>
+            <h2 class="white v-align">Paymob is an Electronic Payment Enabler that offers integrated infrastructure solutions, empowering the masses with instruments to increase financial inclusion</h2>
+            <div class="CTAs v-align">
+                <a href="about.html" class="CTA-blue">
+                    <div class="CTA">About Paymob</div>
+                </a>
+                <a href="#solutions" class="CTA-white">
+                    <div class="CTA">Find Solutions</div>
+                </a>
+            </div>
+        </div>
+        <img class="homepage-network" src="img/homepage/network.png">
+        
+    </section>
+
+    <section class="solution-for-you" id="solutions">
+
+        <img class="white-circle" src="img/homepage/circle-top.png">
+
+        <div class="container page-padding">
+
+            <h3 class="heading centre">Find the solution that’s right for you</h3>
+
+            <div class="we-work-in">
+
+                <h4 class="blue uppercase">We work in:</h4>
+
+                <div class="products-dropdown homepage-dropdown">
+                    <div class="title-container">
+                        <h7 id="filter-title">Filter by Industry</h7>
+                        <img src="img/generic/dropdown-arrow.svg">
+                    </div>
+                    <ul>
+                        <li id="all-industries-selector">All Industries</li>
+                        <li id="banks-selector">Banks</li>
+                        <li id="closed-community-selector">Closed Communities</li>
+                        <li id="FMCG-selector">FMCG</li>
+                        <li id="government-selector">Government</li>
+                        <li id="microfinance-selector">Microfinance</li>
+                        <li id="telecom-operator-selector">Telecom Operators</li>
+                    </ul>
+
+                </div>
+            </div>
+
+
+            <div class="homepage-products">
+
+                <div class="product banks telecom-operator">
+                    <img src="img/products/PWP.svg">
+                    <h5>PWP - Paymob Wallet Processor</h5>
+                    <p>Paymob Wallet Processor, the central infrastructure layer on which the mobile wallets ecosystem is built.</p>
+                </div>
+
+                <div class="product closed-community FMCG microfinance telecom-operator">
+                    <img src="img/products/agent-banking.svg">
+                    <h5>Agent Banking</h5>
+                    <p>Cash-in, cash-out, registration, history and pin management all take place through the Agent Banking Solution.</p>
+                </div>
+
+                <div class="product banks FMCG government microfinance telecom-operator">
+                    <img src="img/products/disbursement.svg">
+                    <h5>Disbursement</h5>
+                    <p>Disburse salaries, loans and commissions through bulk disbursements tools on multiple mobile wallet networks.</p>
+                </div>
+
+                <div class="product banks FMCG government microfinance telecom-operator">
+                    <img src="img/products/payment-collection.svg">
+                    <h5>Payment Collection</h5>
+                    <p>Billers, aggregators and collectors enabled with bill presentment services on dedicated payment channels.</p>
+                </div>
+
+                <div class="product banks closed-community telecom-operator">
+                    <img src="img/products/merchant-acceptance.svg">
+                    <h5>Merchant Acceptance</h5>
+                    <p>An omnichannel payment acceptance platform enabling merchants with tools for accepting mobile wallet payments.</p>
+                </div>
+
+                <div class="product banks closed-community government telecom-operator">
+                    <img src="img/products/reports-and-analytics.svg">
+                    <h5>Business Intelligence</h5>
+                    <p>Business Intelligence tools providing data insights and analytics to issuers with custom reports generation.</p>
+                </div>
+
+                <div class="product banks telecom-operator closed-community">
+                    <img src="img/products/risk.svg">
+                    <h5>Fraud & Risk Management</h5>
+                    <p>Various transaction velocity modules for fraud protection and eliminating the risk of irregular transactions.</p>
+                </div>
+
+                <div class="product banks telecom-operator closed-community">
+                    <img src="img/products/terminal-management.svg">
+                    <h5>Terminal Management</h5>
+                    <p>Hierarchal terminal management solution for managing POS terminals and linking merchants with wallet networks.</p>
+                </div>
+
+                <div class="product banks telecom-operator closed-community">
+                    <img src="img/products/billpayments-topups.svg">
+                    <h5>Bill Payments/Topup</h5>
+                    <p>Availing bill networks for top-up and bill payment transactions for end-customers through the mobile wallets.</p>
+                </div>
+
+                <div class="product banks telecom-operator closed-community">
+                    <img src="img/products/promo-management.svg">
+                    <h5>Promo Management</h5>
+                    <p>Promo campaign generation through customizable user behavior and activity modules with usage data focus.</p>
+                </div>
+
+            </div>
+
+            <a href="products.html" class="CTA-teal">
+                <div class="CTA">View all Solutions</div>
+            </a>
+
+        </div>
+
+        <img class="blue-circle" src="img/homepage/circle-bottom.jpg">
+
+        <div class="homepage-casestudies">
+
+            <h1 class="heading">Case Studies</h1>
+            <h2 id="relevant-to-your-industry">Relevant to your Industry</h2>
+
+            <div class="homepage-casestudies-container">
+
+                <div class="homepage-casestudies-nav">
+                    <div class="homepage-casestudies-title heading homepage-casestudies-title-selected" id="homepage-casestudies-title-auccoin">
+                        AUC Coin
+                    </div>
+                    <div class="homepage-casestudies-title heading" id="homepage-casestudies-title-vodafonecash">
+                        Vodafone Cash
+                    </div>
+                    <div class="homepage-casestudies-title heading" id="homepage-casestudies-title-MFI">
+                        MFI Gateway Solution
+                    </div>
+                    <div class="homepage-casestudies-title heading" id="homepage-casestudies-title-nafaqa">
+                        Nafaqa
+                    </div>
+                </div>
+
+                <div class="homepage-casestudies-content">
+
+                    <div id="homepage-casestudies-auccoin" class="homepage-casestudy">
+                        <h3 class="heading">AUC Coin - Cashless Community</h3>
+                        <h4 class="heading">Solution Provider: American University of Cairo (AUC)</h4>
+                        <p>American University of Cairo (AUC) is the first university in Egypt to adopt the cashless initiative and apply it across all on campus across campus services and third-party outlets. In addition to developing and maintaining the cashless solution implemented on AUC premises, Paymob constantly works on developing and enhancing the campus payments experience and constantly works on adding different use cases to increase the ultimate benefit of the community. This implementation has proven the benefits and feasibility of such solution to other closed communities such as, schools, workspaces and other residential communities. Paymob was also instrumental in contributing to the design-thinking of the whole end-to-end experience catered for a better customer journey.</p>
+                        <a href="casestudies/casestudy-detailed-auccoin.html" class="read-more-link">
+                            <div class="read-more">Read More</div>
+                        </a>
+                    </div>
+
+                    <div id="homepage-casestudies-vodafonecash" class="homepage-casestudy">
+                        <h3 class="heading">Vodafone Cash - Mobile Wallet</h3>
+                        <h4 class="heading">Solution Provider: Vodafone</h4>
+                        <p>The mobile wallet is an interoperable modular white label solution that caters for the needs of the unbanked and underserved. Paymob has worked with Vodafone alongside Mastercard and EBC (Egyptian Banks Company) on offering a financial tool that seamlessly fits into the everyday life of the Egyptian citizen, all while increasing top line and decreasing running costs. The solution serves as a tool for both the mobile wallet issuer as well as user through the following functionalities: funding, payments, transfers, collection and distribution.</p>
+                        <a href="casestudies/casestudy-detailed-vodafonecash.html" class="read-more-link">
+                            <div class="read-more">Read More</div>
+                        </a>
+                    </div>
+
+                    <div id="homepage-casestudies-MFI" class="homepage-casestudy">
+                        <h3 class="heading">MFI Gateway Solution</h3>
+                        <h4 class="heading">Solution Provider: Alexandria Business Association (ABA), three Telecom Operators (Orange, Etisalat, Vodafone)</h4>
+                        <p>Paymob’s MFI “Gateway solution” aims to provide an entry point for microfinance customers to get access to an increased range of financial services, by capitalising on mobile wallets. With more than 400,000 active borrowers across 7 governorates and more than 60 branches, Alexandria Businessmen Association (ABA) is the MFI in Egypt with the largest outreach in terms of number of customers. As of early 2019, ABA became the first MFI to launch a digital solution allowing their customers to receive loans and pay installments through mobile wallets. This solution was launched in partnership with Vodafone, Egypt’s leading mobile network operator. By providing the integration between the MNO and ABA, Paymob managed to automate the collection of loan installments for ABA through Vodafone. </p>
+                        <a href="casestudies/casestudy-detailed-MFIGatewaySolution.html" class="read-more-link">
+                            <div class="read-more">Read More</div>
+                        </a>
+                    </div>
+
+                    <div id="homepage-casestudies-nafaqa" class="homepage-casestudy">
+                        <h3 class="heading">Nafaqa Government-To-Person</h3>
+                        <h4 class="heading">Solution Provider: Ministry of Supply and Internal Trade (MSIT), Bank Nasser, the four telecom operators </h4>
+                        <p>The digital Nafaqa program provides an entry-point to the financial inclusion of the previously largely unbanked social transfer recipients through the use of a more efficient and safe payment instrument. On the long run, this solution will also allow to bundle social transfers with savings or transaction accounts.</p>
+                        <a href="casestudies/casestudy-detailed-Nafaqa.html" class="read-more-link">
+                            <div class="read-more">Read More</div>
+                        </a>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="statistics  page-padding">
+
+        <h3 class="heading">Statistics</h3>
+
+        <div class="statistics-container">
+
+            <div class="statistics-box statistics-box-light-blue">
+                <img src="img/statistics/users.svg" />
+                <h1>+6.5M</h1>
+                <h2>Users</h2>
+            </div>
+
+            <div class="statistics-box statistics-box-dark-blue">
+                <img src="img/statistics/agents.svg" />
+                <h1>120K</h1>
+                <h2>Agents</h2>
+            </div>
+
+            <div class="statistics-box statistics-box-light-blue">
+                <img src="img/statistics/volume.svg" />
+                <h1>+15B</h1>
+                <h2>In Volume [EGP] </h2>
+            </div>
+
+            <div class="statistics-box statistics-box-dark-blue">
+                <img src="img/statistics/transactions.svg" />
+                <h1>+20M</h1>
+                <h2>Transactions</h2>
+            </div>
+
+            <div class="statistics-box statistics-box-light-blue">
+                <img src="img/statistics/deployments.svg" />
+                <h1>10</h1>
+                <h2>Bank/MNO Deployments</h2>
+            </div>
+
+        </div>
+
+
+    </section>
+
+    <section class="clients  page-padding">
+
+        <h3 class="heading">Partners</h3>
+
+        <div class="client-container">
+
+            <img class="client" src="img/clients/AAI.png">
+            <img class="client" src="img/clients/ABK.png">
+            <img class="client" src="img/clients/BC.png">
+            <img class="client" src="img/clients/saib.png">
+            <img class="client" src="img/clients/audi.png">
+            <img class="client" src="img/clients/vodafone.png">
+            <img class="client" src="img/clients/mastercard.png">
+
+        </div>
+
+    </section>
+
+    <footer>
+
+        <div class="flex1">
+            <img class="paymob-logo" src="img/generic/paymob-logo-white.svg">
+            <h6>Copyright © 2019 All rights reserved</h6>
+        </div>
+        
+        <div class="flex2">
+            <h5>Quick Links</h5>
+            <a href="about.html">
+                <h6>About</h6>
+            </a>
+            <a href="products.html">
+                <h6>Solutions</h6>
+            </a>
+            <a href="careers.html">
+                <h6>Careers</h6>
+            </a>
+        </div>
+
+        <div class="flex3">
+            <h5>Credits</h5>
+            <a target="_blank" href="http://letterlust.studio">
+                <h6>Letterlust Design Studio</h6>
+            </a>
+        </div>
+
+        <div class="flex4">
+
+            <a target="_blank" href="https://www.linkedin.com/company/paymob"><img src="img/generic/in.svg"></a>
+            <a target="_blank" href="https://www.facebook.com/PayMobSolutions/"><img src="img/generic/fb.svg"></a>
+        </div>
+
+    </footer>
+
+
+    <!--Hamburger Button Animation-->
+
+    <script>
+        // Look for .hamburger
+        var hamburger = document.querySelector(".hamburger");
+        var mobileMenu = document.querySelector("#mobileMenu");
+        var mobileMenuUl = document.querySelector("#mobileMenuUl");
+        // On click
+        hamburger.addEventListener("click", function() {
+            // Toggle class "is-active"
+            hamburger.classList.toggle("is-active");
+            // Open Menu
+            mobileMenu.classList.toggle("mobileMenuActive");
+            // Show Links
+            mobileMenuUl.classList.toggle("UlOpaque");
+        });
+    </script>
+
+    <!--Products Dropdown Animation-->
+    <script>
+        $(function() {
+            $('.products-dropdown').hover(
+                function() {
+                    $('ul', this).slideDown(500);
+                },
+                function() {
+                    $('ul', this).slideUp(300);
+                }
+            );
+        });
+    </script>
+
+
+
+
+</body>
+
+</html>
