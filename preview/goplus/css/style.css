@@ -738,23 +738,25 @@ header {
 
 .solutionDescription {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     margin: 50px 0;
 }
 
 .solutionDescription > div {
-    width: 30%;
+    width: 33.3%;
 
-    padding: 25px 0;
-
-    text-align: center;
     color: #FF7D00;
-    border: solid 2px #FF7D00;
-    border-radius: 7px;
 
     font-family: 'bebasneue-bold', sans-serif;
     text-transform: uppercase;
-    font-size: 26px;
+    font-size: 30px;
+}
+
+.solutionDescription > div img {
+    width: 40px;
+    margin-right: 20px;
+    vertical-align: middle;
 }
 
 .SolutionInfo .ControlledWidth > p,
@@ -1064,6 +1066,13 @@ footer h10 a:hover {
     
     .imageGallery a {
         width: 50%;
+    }
+    
+    
+    
+    .solutionDescription > div {
+        width: 100%;
+        margin-bottom: 10px;
     }
 
 
