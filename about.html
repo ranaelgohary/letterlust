@@ -2,212 +2,256 @@
 <html lang="en-gb">
 
 <head>
-    <title>Letterlust Studio</title>
+    <title>GoPlus Egypt</title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no" />
 
-    <!-- fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400&display=swap" rel="stylesheet">
+    <!-- favicon -->
+    <link rel="icon" type="image/png" href="img/GenericElements/favicon.png">
 
     <!-- css -->
     <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/owl.carousel.css">
+    <link rel="stylesheet" type="text/css" href="css/owl.theme.default.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/hamburgers.css">
 
     <!-- js -->
     <script src="js/jquery-3.3.1.min.js"></script>
-    <script src="js/script.js"></script>
+        <!-- Client Logo Slider-->
+    <script src="js/owl.carousel.min.js"></script> 
+
     
-    <script>
-        (function(i, s, o, g, r, a, m) {
-            i['GoogleAnalyticsObject'] = r;
-            i[r] = i[r] || function() {
-                (i[r].q = i[r].q || []).push(arguments)
-            }, i[r].l = 1 * new Date();
-            a = s.createElement(o),
-                m = s.getElementsByTagName(o)[0];
-            a.async = 1;
-            a.src = g;
-            m.parentNode.insertBefore(a, m)
-        })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
-
-        ga('create', 'UA-103569313-1', 'auto');
-        ga('send', 'pageview');
-    </script>
-
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
-    <script src="js/responsiveslides.min.js"></script>
-
-    <link rel="icon" type="image/png" href="img/MainElements/favicon.png">
-
-
-
+    
 </head>
-
 
 <body>
 
-    <div class="ColouredContainer">
+    <header>
 
-        <header>
+        <div class="ControlledWidth">
 
-            <div class="ControlledWidth">
+            <a href="index.html"><img class="HeaderLogo" src="img/GenericElements/GoPlus_Logo_White.png"></a>
 
-                <a href="index.html"><img class="HeaderLogo" src="img/svg/letterlust_logo.svg" /></a>
+            <nav class="MainNav">
+                <ul>
+                    <a href="index.html">
+                        <li>Home</li>
+                    </a>
+                    <a href="about.html">
+                        <li class="CurrentPage">About</li>
+                    </a>
+                    <a href="solutions.html">
+                        <li>Solutions</li>
+                    </a>
+                    <a href="successstories.html">
+                        <li>Success Stories</li>
+                    </a>
+                    <a href="contact.html">
+                        <li>Contact</li>
+                    </a>
+                </ul>
+            </nav>
 
-                <nav id="mainNav">
-                    <ul>
-                        <a href="index.html">
-                            <li>Home</li>
-                        </a>
-                        <a href="work.html">
-                            <li>Work</li>
-                        </a>
-                        <a href="clients.html">
-                            <li>Clients</li>
-                        </a>
-                        <a href="about.html" class="currentPage">
-                            <li>Story</li>
-                        </a>
-                        <a href="contact.html">
-                            <li>Contact</li>
-                        </a>
-                    </ul>
-                </nav>
-                
-            </div>
+        </div>
 
-        </header>
+        <div class="hamburger hamburger--3dy" type="button" id="burger-button">
+            <span class="hamburger-box">
+                <span class="hamburger-inner"></span>
+            </span>
+        </div>
 
+        <div id="mobileMenu" class="mobileMenuInactive">
 
-        <div id="openBurgerMenu" class="mobileMenuToggle">MENU</div>
-        <div id="closeBurgerMenu" class="mobileMenuToggle displayNone">CLOSE</div>
+            <ul id="mobileMenuUl" class="UlTransparent">
 
-        <div id="mobileMenu" class="displayNone">
-
-            <ul>
                 <a href="index.html">
                     <li>Home</li>
                 </a>
-                <a href="work.html">
-                    <li>Work</li>
+                <a href="about.html">
+                    <li class="CurrentPage">About</li>
                 </a>
-                <a href="clients.html">
-                    <li>Clients</li>
+                <a href="solutions.html">
+                    <li>Solutions</li>
                 </a>
-                <a href="about.html" class="currentPage">
-                    <li>Story</li>
+                <a href="successstories.html">
+                    <li>Success Stories</li>
                 </a>
                 <a href="contact.html">
                     <li>Contact</li>
                 </a>
+
             </ul>
 
         </div>
 
+    </header>
 
+    <div class="IntroSection">
+        <img class="IntroSectionImg" src="img/About/TopSection/AboutTopSection.jpg">
 
         <div class="ControlledWidth">
 
-            <div class="about">
-                <div class="about-Text-Img-Container">
-                    <div class="text text-left">
-                        <h2>Bespoke Type-Based Designs</h2>
-                        <p>Letterlust is a graphic design studio with a focus on typography and lettering. Offering a wide range of design and branding services in both digital & print.<br><br>
-
-                            The studio specializes in creating bespoke type-based designs which convey a brand’s story with clarity and personality. Seeking to match clients with the right type of lettering, custom made to capture a brand’s identity and speak on its behalf.<br><br>
-
-                            Letterlust’s philosophy is to value communication above design, creating a functional, beautiful logo is equally important as a happy client whose voice was heard and well-represented in the design.
-
-                        </p>
-                    </div>
-                    <img id="office-portrait" src="img/About/image13.jpg">
-                </div>
-                <img class="about-full-width-image" src="img/About/kelly-sikkema-291518-unsplash.jpg">
-                <div class="about-Text-Img-Container">
-
-                    <img id="beach-picture" src="img/About/image12.jpg">
-                    <div class="text text-right">
-                        <h2>Designer Behind the Brand</h2>
-                        <p>After graduating with a bachelor in Applied Arts (Media Design), I went on to become a graphic designer with a passion for typography and lettering. In 2013, during my senior year, I represented the award winning website for TEDxGUC at the Awwwards Conference in Paris. After graduation I worked in London for two years at The Digital Innovation Group. Some of my experience in London includes attending the summer Typography course at Reading University.<br><br>
-
-                            I am currently one of three designers selected to receive a year-long mentorship with award winning type designer Nadine Chahine.<br><br>
-
-                            You can follow my typographic side projects on my <a href="http://instagram.com/letter.lust" target="_blank">Instagram account.</a><br><br>
-
-                            For design inquiries, please message on <a href="https://www.facebook.com/letter.lust" target="_blank">Facebook</a><br>or e-mail <a href="mailto:rana@letterlust.studio">rana@letterlust.studio</a></p>
-                    </div>
-                </div>
+            <div class="IntroSectionText">
+                <h1>We are energetic,<br>
+                    smart and passionate</h1>
+                <p>GO+ is the ultimate software and technology haven providing catered systems for all platforms and sectors. Through digitizing and creating efficient systems, GO+ provides a wide array of products and services that diminishes waste on numerous fronts. </p>
             </div>
 
+        </div>
+    </div>
 
-            <div class="GenericSection">
+    <div class="AboutInfo">
 
-                <h1>Need Design Consutancy?</h1>
-                <p>Let’s create something marvellous together!<br>I’d love to hear about what you’re doing and how I can help.</p>
-                <a href="contact.html">
-                    <div class="CTA">GET IN TOUCH</div>
-                </a>
+        <div class="ControlledWidth">
+
+           <p>Since its inception in 2013, Go+ has provided innovative and creative solutions that allow for digital transformations in any sector with a focus on logistics and road transportation, with both the digital and hardware infrastructure to support the relevant systems of our clients. GO+ has been able to provide quality results to both the public and private sector through an ambitious and highly developed team.</p>
+            
+            <h2>Mission</h2>
+            
+            <p>Go+ is determined  to provide digital solutions to all public and private sector entities to aid in their processes through simple development of technology and software to reduce the waste of time and resources. Through a variety of services and tech solutions, we have the ability to install the necessary infrastructure and design key software to help businesses and public entities leap into the future.  Through data and information gathering, GO+ provides the strategic solutions to maximize efficiency for market growth and development. With a stronghold in Egypt, GO+ has expanded into other regions globally to drive technical innovations to improve the output of any entity it helps develop.</p>
+            
+            <h2>vision</h2>
+            
+            <p>GO+ promises to increase global market efficiency and help improve public life by providing digital hardware and software solutions to enterprises and institutions across the globe.</p>
+
+        </div>
+
+    </div>
+    
+    <div class="ClientLogos SectionPadding">
+
+        <div class="ControlledWidth">
+            
+            <h2>Successful Partnerships</h2>
+
+            <div class="brand-carousel owl-carousel owl-theme">
+
+                <div class="single-logo">
+                    <img src="img/Homepage/ClientLogos/NXP.png">
+                </div>
+
+                <div class="single-logo">
+                    <img src="img/Homepage/ClientLogos/kathreinlogo.png">
+                </div>
+
+                <div class="single-logo">
+                    <img src="img/Homepage/ClientLogos/Maha.png">
+                </div>
+
+                <div class="single-logo">
+                    <img src="img/Homepage/ClientLogos/fujitsu.png">
+                </div>
+
+                <div class="single-logo">
+                    <img src="img/Homepage/ClientLogos/SGS.png">
+                </div>
+                
+                <div class="single-logo">
+                    <img src="img/Homepage/ClientLogos/e-finance.png">
+                </div>
+                
+                <div class="single-logo">
+                    <img src="img/Homepage/ClientLogos/Moi.png">
+                </div>
+                
+                <div class="single-logo">
+                    <img src="img/Homepage/ClientLogos/Ppo.png">
+                </div>
+                
+                <div class="single-logo">
+                    <img src="img/Homepage/ClientLogos/Belhasa.png">
+                </div>
+                
+                <div class="single-logo">
+                    <img src="img/Homepage/ClientLogos/gemalto.jpg">
+                </div>
+                
+                <div class="single-logo">
+                    <img src="img/Homepage/ClientLogos/thales.jpg">
+                </div>
 
             </div>
 
         </div>
 
+    </div>
+    
+    <div class="RequestMeeting SectionPadding">
 
+        <div class="ControlledWidth">
+
+            <div class="RequestMeetingText">
+                <h2>Request a meeting</h2>
+                <p>We’d be happy to have a call and discuss your business 
+needs and what we could do for you.</p>
+                
+                <a href="contact.html" class="Button WhiteButton">
+                    <div>
+                        <h10>Get in Touch</h10>
+                        <div class="ButtonArrow"></div>
+                    </div>
+                </a>
+            </div>
+
+        </div>
 
     </div>
 
-    <footer id="footer">
-
+    <footer>
+        
         <div class="ControlledWidth">
+    
+            <h9>Copyright © Go Plus Egypt. All rights reserved.</h9>
 
-            <h2>Letterlust on Instagram</h2>
-
-            <div class="instagram-feed">
-                <a href="http://instagram.com/letter.lust" target="_blank"><img src="img/instagramfeed/26daysofletters.jpg"></a>
-                <a href="http://instagram.com/letter.lust" target="_blank"><img src="img/instagramfeed/C.jpg"></a>
-                <a href="http://instagram.com/letter.lust" target="_blank"><img src="img/instagramfeed/DOTS.jpg"></a>
-                <a href="http://instagram.com/letter.lust" target="_blank"><img src="img/instagramfeed/ExcelsiorPlate.jpg"></a>
-                <a href="http://instagram.com/letter.lust" target="_blank"><img src="img/instagramfeed/Hockzeitkamera.jpg"></a>
-
-                <a href="http://instagram.com/letter.lust" target="_blank"><img src="img/instagramfeed/Quote1.jpg"></a>
-                <a href="http://instagram.com/letter.lust" target="_blank"><img src="img/instagramfeed/W.jpg"></a>
-                <a href="http://instagram.com/letter.lust" target="_blank"><img src="img/instagramfeed/Quote2.jpg"></a>
-                <a href="http://instagram.com/letter.lust" target="_blank"><img src="img/instagramfeed/Z.jpg"></a>
-                <a href="http://instagram.com/letter.lust" target="_blank"><img src="img/instagramfeed/Quote3.jpg"></a>
-            </div>
-
-            <a href="mailto:ranahello@letterlust.studio">rana@letterlust.studio</a>
-
-            <div class="SocialMedia">
-
-                <a href="https://www.facebook.com/letter.lust" target="_blank">
-                    <div class="SocialMediaCircle">
-
-                        <img class="FacebookFooterIcon" src="img/svg/facebook-logo.svg">
-
-                    </div>
-                </a>
-
-                <a href="https://www.instagram.com/letter.lust/" target="_blank">
-                    <div class="SocialMediaCircle">
-
-                        <img class="InstagramFooterIcon" src="img/svg/instagram-logo.svg">
-
-                    </div>
-                </a>
-
-            </div>
-
+            <h10>Designed by <a href="www.letterlust.studio" target="_blank">Letterlust Studio</a></h10>
+            
         </div>
-
+    
     </footer>
 
+
+
+    <!--Hamburger Button Animation-->
+
     <script>
-        $(function() {
-            $(".rslides").responsiveSlides();
+        // Look for .hamburger
+        var hamburger = document.querySelector(".hamburger");
+        var mobileMenu = document.querySelector("#mobileMenu");
+        var mobileMenuUl = document.querySelector("#mobileMenuUl");
+        // On click
+        hamburger.addEventListener("click", function() {
+            // Toggle class "is-active"
+            hamburger.classList.toggle("is-active");
+            // Open Menu
+            mobileMenu.classList.toggle("mobileMenuActive");
+            // Show Links
+            mobileMenuUl.classList.toggle("UlOpaque");
         });
     </script>
 
-</body>
 
-</html>
+
+    <!-- Client Logo Slider-->
+
+    <script>
+        $('.owl-carousel').owlCarousel({
+            loop: false,
+            nav: false,
+            dots: true,
+            autoplay: true,
+            responsive: {
+                0: {
+                    items: 1
+                },
+                600: {
+                    items: 3
+                },
+                1000: {
+                    items: 5
+                }
+            }
+        })
+    </script>
+
+</body>
